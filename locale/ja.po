@@ -1,0 +1,566 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Stelo\n"
+"Report-Msgid-Bugs-To: Eiichiro Ito <ghc02331@nifty.com>\n"
+"POT-Creation-Date: 2018-10-13\n"
+"PO-Revision-Date: 2018-10-13 16:25+0200\n"
+"Last-Translator: Eiichiro Ito <ghc02331@nifty.com>\n"
+"Language-Team: Eiichiro Ito <ghc02331@nifty.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.1.6\n"
+
+############################################
+# FORMATTING
+############################################
+# Language name as you'd like it to appear in the Languages menu
+# (Required)
+msgid "Language-Name"
+msgstr "日本語"
+
+# Directionality of language
+# LTR = Left to Right
+# RTL = Right to Left
+msgid "Language-Direction"
+msgstr "LTR"
+
+# Scale to apply to font size (2 for twice as large)
+# Use this if the font is too small for legibility on the Scratch interface
+msgid "Font-Scale"
+msgstr "1.3"
+
+# Set to 'true' or 'false'
+# Use this if you do not want any of the text to be bolded, for legibility
+msgid "Suppress-Bold"
+msgstr "false"
+
+# Font to use on a Windows system
+msgid "Win-Font"
+msgstr "Tahoma"
+
+# Font to use on a Mac system
+msgid "Mac-Font"
+msgstr "times"
+
+# Font to use on a Linux system
+msgid "Linux-Font"
+msgstr "Mona"
+
+############################################
+# BLOCKS
+############################################
+msgid "%b and %b"
+msgstr "%b かつ %b"
+
+msgid "%b or %b"
+msgstr "%b または %b "
+
+msgid "%f of %n"
+msgstr "%n の %f"
+
+msgid "%n of %m 's %t"
+msgstr "%m の %n が持つ %t"
+
+msgid "%n between %n and %n"
+msgstr "%n が %n と %n の間にある"
+
+msgid "%n mod %n"
+msgstr "%n を %n で割った余り"
+
+msgid "aim high %p"
+msgstr "%p の高い向き"
+
+msgid "basic"
+msgstr "基本"
+
+msgid "black"
+msgstr "黒"
+
+msgid "blue"
+msgstr "青"
+
+msgid "breed id"
+msgstr "種族"
+
+msgid "broadcast %e"
+msgstr "%e を送る"
+
+msgid "brown"
+msgstr "茶"
+
+msgid "change %v by %n"
+msgstr "%v を %n ずつ変える"
+
+msgid "change patch's %p at x %n y %n by %n"
+msgstr "x %n1 y %n2 のパッチの %p を %n3 にする"
+
+msgid "change x by %n"
+msgstr "xを %n ずつ変える"
+
+msgid "change y by %n"
+msgstr "yを %n ずつ変える"
+
+msgid "clear all"
+msgstr "全て消す"
+
+msgid "clear graphics"
+msgstr "パッチの色を消す"
+
+msgid "clear turtles"
+msgstr "タートルを消す"
+
+msgid "color"
+msgstr "色"
+
+msgid "control"
+msgstr "制御"
+
+msgid "create %n %m"
+msgstr "%n 個の %m を作る"
+
+msgid "cyan"
+msgstr "シアン"
+
+msgid "die"
+msgstr "死ぬ"
+
+msgid "diffuse patch's %p %n"
+msgstr "パッチの %p を %n だけ拡散する"
+
+msgid "diffuse4 patch's %p %n"
+msgstr "パッチの %p を %n だけ4方向に拡散する"
+
+msgid "distance to x %n y %n"
+msgstr "x %n y %n までの距離"
+
+msgid "else"
+msgstr "でなければ"
+
+msgid "forward %n"
+msgstr "%n 歩進む"
+
+msgid "gray"
+msgstr "グレー"
+
+msgid "green"
+msgstr "緑"
+
+msgid "hatch"
+msgstr "繁殖する"
+
+msgid "heading %n"
+msgstr "%d 度に向ける"
+
+msgid "heading"
+msgstr "向き"
+
+msgid "id"
+msgstr "番号"
+
+msgid "if %b"
+msgstr "もし %b なら"
+
+msgid "is pen down?"
+msgstr "ペンが下りている"
+
+msgid "kill %n of %m"
+msgstr "%m の %n 番を殺す"
+
+msgid "lime"
+msgstr "ライム"
+
+msgid "magenta"
+msgstr "マジェンタ"
+
+msgid "multiply patch's %p by %n"
+msgstr "パッチの %p を %n 倍する"
+
+msgid "not %b"
+msgstr "%b ではない"
+
+msgid "nsum patch's %p to %p"
+msgstr "パッチの %p の合計を %p に入れる"
+
+msgid "nsum4 patch's %p to %p"
+msgstr "パッチの %p の4方向の合計を %p に入れる"
+
+msgid "one of %m at x %n y %n"
+msgstr "x %n1 y %n2 にいる %m"
+
+msgid "operators"
+msgstr "演算"
+
+msgid "orange"
+msgstr "オレンジ"
+
+msgid "patch color at x %n y %n"
+msgstr "x %n y %n のパッチの色"
+
+msgid "patch"
+msgstr "パッチ"
+
+msgid "patch's %p at x %n y %n"
+msgstr "x %n1 y %n2 のパッチの %p"
+
+msgid "pen down"
+msgstr "ペンを下ろす"
+
+msgid "pen up"
+msgstr "ペンを上げる"
+
+msgid "pen"
+msgstr "ペン"
+
+msgid "pick random %n to %n"
+msgstr "%n から %n までの乱数"
+
+msgid "pink"
+msgstr "ピンク"
+
+msgid "purple"
+msgstr "紫"
+
+msgid "random"
+msgstr "ランダム"
+
+msgid "red"
+msgstr "赤"
+
+msgid "repeat %n"
+msgstr "%n 回繰り返す"
+
+msgid "repeat until %b"
+msgstr "%b まで繰り返す"
+
+msgid "round %n"
+msgstr "%n を丸める"
+
+msgid "scale %v color %c from %n to %n"
+msgstr "%v を %n1 から %n2 の範囲の %c 色にする"
+
+msgid "scale patch's %p color %c from %n to %n"
+msgstr "パッチの %p を %n1 から %n2 の範囲の %c 色にする"
+
+msgid "screen height"
+msgstr "画面の高さ"
+
+msgid "screen width"
+msgstr "画面の幅"
+
+msgid "sensing"
+msgstr "調べる"
+
+msgid "set %v to %n"
+msgstr "%v を %n にする"
+
+msgid "set color to %c"
+msgstr "%c 色にする"
+
+msgid "set patch color at x %n y %n to %c"
+msgstr "x %n y %n のパッチを %c 色にする"
+
+msgid "set patch size to %n"
+msgstr "パッチの大きさを %n にする"
+
+msgid "set patch's %p at x %n y %n to %n"
+msgstr "x %n1 y %n2 のパッチの %p を %n3 にする"
+
+msgid "set x to %n"
+msgstr "xを %n にする"
+
+msgid "set y to %n"
+msgstr "yを %n にする"
+
+msgid "sky"
+msgstr "空"
+
+msgid "stamp"
+msgstr "スタンプ"
+
+msgid "stop all"
+msgstr "すべてを止める"
+
+msgid "stop script"
+msgstr "スクリプトを止める"
+
+msgid "truncate %n"
+msgstr "%n を切り捨てる"
+
+msgid "turn %n"
+msgstr "%n 度回す"
+
+msgid "turquoise"
+msgstr "ターコイズ"
+
+msgid "turtles %m count"
+msgstr "%m の個数"
+
+msgid "variables"
+msgstr "変数"
+
+msgid "when I receive %e"
+msgstr "%e を受け取ったとき"
+
+msgid "when loop"
+msgstr "ループ"
+
+msgid "when setup"
+msgstr "セットアップ"
+
+msgid "white"
+msgstr "白"
+
+msgid "x position"
+msgstr "x座標"
+
+msgid "y position"
+msgstr "y座標"
+
+msgid "yellow"
+msgstr "黄"
+
+############################################
+# USER INTERFACE
+############################################
+msgid "(empty)"
+msgstr "(空)"
+
+msgid "About Stelo"
+msgstr "Steloについて"
+
+msgid "About this project:"
+msgstr "このプロジェクトについて:"
+
+msgid "add comment"
+msgstr "コメントを追加"
+
+msgid "add comment here"
+msgstr "コメントを追加してください"
+
+msgid "add new turtle"
+msgstr "タートルを追加"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Choose a folder"
+msgstr "フォルダを選ぶ"
+
+msgid "Choose new turtle from file"
+msgstr "新しいタートルをファイルから選ぶ"
+
+msgid "clean up"
+msgstr "きれいにする"
+
+msgid "Clear Graphics"
+msgstr "パッチの色を消す"
+
+msgid "Clear Turtles"
+msgstr "タートルを消す"
+
+msgid "Close dialog?"
+msgstr "ダイアログを閉じますか?"
+
+msgid "comment"
+msgstr "コメント"
+
+msgid "Computer"
+msgstr "コンピューター"
+
+msgid "Could not create folder."
+msgstr "フォルダを作れない"
+
+msgid "Could not delete folder."
+msgstr "フォルダを削除できない"
+
+msgid "Could not read"
+msgstr "読めません"
+
+msgid "Could not write file"
+msgstr "ファイルに書けません"
+
+msgid "delete"
+msgstr "削除"
+
+msgid "Delete a variable"
+msgstr "変数を削除"
+
+msgid "Desktop"
+msgstr "デスクトップ"
+
+msgid "Don't Save"
+msgstr "保存しない"
+
+msgid "duplicate"
+msgstr "複製"
+
+msgid "Enter Number (1..)"
+msgstr "数値を入力してください(1..)"
+
+msgid "Enter Number (more than patch order)"
+msgstr "数値を入力してください(パッチ幅以上)"
+
+msgid "Examples"
+msgstr "例"
+
+msgid "Exit presentation"
+msgstr "発表モードを抜ける"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "File not found"
+msgstr "ファイルが見つかりません"
+
+msgid "Help"
+msgstr "ヘルプ"
+
+msgid "help"
+msgstr "ヘルプ"
+
+msgid "Home"
+msgstr "ホーム"
+
+msgid "Invalid Number"
+msgstr "数値が誤っています"
+
+msgid "Make a variable"
+msgstr "新しい変数を作る"
+
+msgid "Message name:"
+msgstr "メッセージの名前:"
+
+msgid "My Projects"
+msgstr "私のプロジェクト"
+
+msgid "new"
+msgstr "新規"
+
+msgid "New"
+msgstr "新規"
+
+msgid "New file name?"
+msgstr "新しいファイル名は?"
+
+msgid "New Filename:"
+msgstr "新しいファイル名"
+
+msgid "New folder name:"
+msgstr "新しいフォルダ名"
+
+msgid "New turtle:"
+msgstr "新しいタートル"
+
+msgid "No"
+msgstr "いいえ"
+
+msgid "No variables."
+msgstr "変数がありません"
+
+msgid "Observer"
+msgstr "オブザーバー"
+
+msgid "Open"
+msgstr "開く"
+
+msgid "Open Project"
+msgstr "プロジェクトを開く"
+
+msgid "Patch"
+msgstr "パッチ"
+
+msgid "Project author:"
+msgstr "プロジェクトの作者:"
+
+msgid "Project Notes"
+msgstr "プロジェクトのメモ"
+
+msgid "Quit"
+msgstr "終了"
+
+msgid "Reading"
+msgstr "Reading"
+
+msgid "Save"
+msgstr "保存する"
+
+msgid "Save As"
+msgstr "名前をつけて保存"
+
+msgid "Save changes before quitting?"
+msgstr "終了する前に変更を保存しますか?"
+
+msgid "Save failed"
+msgstr "保存失敗"
+
+msgid "save picture of scripts"
+msgstr "スクリプトの画像を保存"
+
+msgid "Save Project"
+msgstr "プロジェクトを保存"
+
+msgid "Save Scripts Snapshot"
+msgstr "スクリプトのスナップショットを保存"
+
+msgid "Save the current project?"
+msgstr "現在のプロジェクトを保存する?"
+
+msgid "Save this project"
+msgstr "このプロジェクトを保存する"
+
+msgid "Scripts"
+msgstr "スクリプト"
+
+msgid "Set language"
+msgstr "言語を設定"
+
+msgid "Set Recoding Interval"
+msgid "Set Size"
+
+msgid "Start Recording"
+msgstr "録画を開始する"
+
+msgid "Start Loop Scripts"
+msgstr "ループを開始する"
+
+msgid "Start Setup Scripts"
+msgstr "セットアップを開始する"
+
+msgid "Stop everything"
+msgstr "すべてを中止"
+
+msgid "Stop Recording"
+msgstr "録画を終了する"
+
+msgid "Switch to full stage"
+msgstr "ステージを全画面に切り変える"
+
+msgid "Switch to presentation mode"
+msgstr "発表モードに切り替える"
+
+msgid "Switch to small stage"
+msgstr "小さなステージに切り替える"
+
+msgid "That variable name is already in use"
+msgstr "その変数名はすでに使われています"
+
+msgid "The file name already exists. Overwrite existing file?"
+msgstr "このファイル名は既に存在します。既存のファイルを上書きしてもよいですか?"
+
+msgid "Turtle"
+msgstr "タートル"
+
+msgid "Update Font List"
+msgstr "フォントを更新する"
+
+msgid "Updating thumbnails"
+msgstr "Updating thumbnails"
+
+msgid "Variable name?"
+msgstr "変数名?"
+
+msgid "Yes"
+msgstr "はい"
