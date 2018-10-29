@@ -152,7 +152,7 @@ msgid "hatch"
 msgstr "繁殖する"
 
 msgid "heading %n"
-msgstr "%d 度に向ける"
+msgstr "%n 度に向ける"
 
 msgid "heading"
 msgstr "向き"
