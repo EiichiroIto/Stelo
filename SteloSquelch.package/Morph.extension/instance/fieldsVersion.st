@@ -1,0 +1,3 @@
+*SteloSquelch
+fieldsVersion
+	^ 1

@@ -1,0 +1,28 @@
+{
+	"commentStamp" : "jm 6/2/2008 15:11",
+	"super" : "Object",
+	"category" : "SteloSquelch-Translation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"ColonSuffix",
+		"EllipsesSuffix",
+		"HeaderString",
+		"ISODict",
+		"IsRTL",
+		"IsRTLMath",
+		"Language",
+		"RenderCenterOffsetCache",
+		"RenderFont",
+		"RenderHintString",
+		"RenderScale",
+		"RenderSuppressBold",
+		"RenderVerticalTrimCache",
+		"RenderWithSqueak",
+		"TranslationDict",
+		"UITranslationSet"
+	],
+	"instvars" : [ ],
+	"name" : "ScratchTranslator",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Stelost-Scripts",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"world",
+		"program",
+		"runningEvents",
+		"transition"
+	],
+	"name" : "SProcess",
+	"type" : "normal"
+}

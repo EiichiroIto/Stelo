@@ -1,0 +1,29 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "BorderedMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scrollbar",
+		"firstVisibleLine",
+		"visibleWidth",
+		"font",
+		"textColor",
+		"selectionColor",
+		"lines",
+		"lineHeight",
+		"isEditable",
+		"hasFocus",
+		"selectionStart",
+		"selectionEnd",
+		"startLoc",
+		"layoutNeeded",
+		"renderer",
+		"blinkState",
+		"backForm"
+	],
+	"name" : "ScrollingStringMorph",
+	"type" : "normal"
+}

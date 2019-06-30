@@ -1,0 +1,3 @@
+*SteloSquelch
+beep
+	"do nothing"

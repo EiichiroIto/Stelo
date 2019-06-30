@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "jm 5/6/2008 18:15",
+	"super" : "ImageFrameMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contentsMorph",
+		"resizeMode"
+	],
+	"name" : "TextBoxMorph",
+	"type" : "normal"
+}

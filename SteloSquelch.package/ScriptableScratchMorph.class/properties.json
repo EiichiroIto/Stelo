@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "jm 6/4/2004 14:16",
+	"super" : "Morph",
+	"category" : "SteloSquelch-Stelost",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"BlockColorDict",
+		"BlockSpecDict",
+		"RandomGen"
+	],
+	"instvars" : [
+		"objName",
+		"blocksBin"
+	],
+	"name" : "ScriptableScratchMorph",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SteloSquelch-CodeGenerator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"targetMorph",
+		"bcGenerator",
+		"parser"
+	],
+	"name" : "StelostCode",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ScriptableScratchMorph",
+	"category" : "SteloSquelch-Stelost",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SteloPatchMorph",
+	"type" : "normal"
+}

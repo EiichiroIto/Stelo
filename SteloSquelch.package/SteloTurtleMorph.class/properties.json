@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ScriptableScratchMorph",
+	"category" : "SteloSquelch-Stelost",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"breedNo"
+	],
+	"name" : "SteloTurtleMorph",
+	"type" : "normal"
+}

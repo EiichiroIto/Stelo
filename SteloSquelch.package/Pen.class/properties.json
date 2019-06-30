@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "BitBlt",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"location",
+		"direction",
+		"penDown"
+	],
+	"name" : "Pen",
+	"type" : "normal"
+}

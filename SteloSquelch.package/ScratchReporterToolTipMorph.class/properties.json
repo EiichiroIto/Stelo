@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ScratchToolTipMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ScratchReporterToolTipMorph",
+	"type" : "normal"
+}

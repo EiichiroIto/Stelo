@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "jm 2/25/2005 14:10",
+	"super" : "Morph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"InfoFont",
+		"NameFont"
+	],
+	"instvars" : [
+		"target",
+		"thumbnailMorph",
+		"nameMorph",
+		"scriptCountMorph",
+		"isSelected",
+		"rolloverOn",
+		"highlightForm",
+		"currentForm",
+		"thumbWidth",
+		"rolloverForm"
+	],
+	"name" : "LibraryItemMorph",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"point2",
+		"point1"
+	],
+	"name" : "ScratchConnectorMorph",
+	"type" : "normal"
+}

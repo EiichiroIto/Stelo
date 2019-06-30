@@ -1,0 +1,4 @@
+*SteloSquelch
+asNumberNoError
+
+	^ 0

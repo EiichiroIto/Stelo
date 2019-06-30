@@ -1,0 +1,3 @@
+accessing
+newPatch
+	^ SteloPatchMorph new

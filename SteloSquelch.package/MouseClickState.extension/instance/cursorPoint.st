@@ -1,0 +1,3 @@
+*SteloSquelch
+cursorPoint
+	^ firstClickDown cursorPoint

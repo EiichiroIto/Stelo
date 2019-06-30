@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SteloSquelch-CodeGenerator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OperatorDict"
+	],
+	"instvars" : [
+		"hats",
+		"codeGenerator"
+	],
+	"name" : "ScratchBlockParser",
+	"type" : "normal"
+}

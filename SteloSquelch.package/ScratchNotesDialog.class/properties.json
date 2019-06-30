@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DialogBoxMorph",
+	"category" : "SteloSquelch-UI-Dialogs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scratchFrame",
+		"commentMorph"
+	],
+	"name" : "ScratchNotesDialog",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "PasteUpMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"targetPane",
+		"currentTab",
+		"lastTabAdded",
+		"barForm"
+	],
+	"name" : "ScratchTabPaneMorph",
+	"type" : "normal"
+}

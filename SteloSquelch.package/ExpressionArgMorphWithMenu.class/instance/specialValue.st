@@ -1,0 +1,3 @@
+microwitch
+specialValue
+	^ specialValue

@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "ImageFrameMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"topSectionHeight",
+		"middleBarForm",
+		"leftJointForm",
+		"rightJointForm",
+		"leftMargin",
+		"rightMargin"
+	],
+	"name" : "DividedImageFrameMorph",
+	"type" : "normal"
+}

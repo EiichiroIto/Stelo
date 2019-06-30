@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Stelost-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"breedId",
+		"varId",
+		"breeds",
+		"raisedEvents"
+	],
+	"name" : "SMicroWorld",
+	"type" : "normal"
+}

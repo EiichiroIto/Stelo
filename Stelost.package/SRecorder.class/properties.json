@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Stelost-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"writer",
+		"rate",
+		"count",
+		"microworld",
+		"modelExtent",
+		"cell",
+		"offset",
+		"extent"
+	],
+	"name" : "SRecorder",
+	"type" : "normal"
+}

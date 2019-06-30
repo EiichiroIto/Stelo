@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "jm 7/4/2008 12:29",
+	"super" : "StringFieldMorph",
+	"category" : "SteloSquelch-UI-Dialogs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"target",
+		"getSelector",
+		"putSelector"
+	],
+	"name" : "UpdatingStringFieldMorph",
+	"type" : "normal"
+}

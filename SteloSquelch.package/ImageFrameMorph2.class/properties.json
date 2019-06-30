@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ImageFrameMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ImageFrameMorph2",
+	"type" : "normal"
+}

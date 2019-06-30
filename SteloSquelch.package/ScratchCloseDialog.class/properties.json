@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DialogBoxMorph",
+	"category" : "SteloSquelch-UI-Dialogs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ScratchCloseDialog",
+	"type" : "normal"
+}

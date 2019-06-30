@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SBreed",
+	"category" : "Stelost-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"breedId",
+		"defaultColor"
+	],
+	"name" : "STurtles",
+	"type" : "normal"
+}

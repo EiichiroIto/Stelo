@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "AlignmentMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"labelMorph",
+		"resizeMorph",
+		"commentMorph",
+		"showHideMorph",
+		"isShowing",
+		"isResizing",
+		"resizeOffset",
+		"connector",
+		"anchor",
+		"anchorOffset",
+		"oldAnchorPos",
+		"lastLayoutTime"
+	],
+	"name" : "ScratchCommentMorph",
+	"type" : "normal"
+}

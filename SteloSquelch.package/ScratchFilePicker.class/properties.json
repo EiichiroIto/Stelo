@@ -1,0 +1,29 @@
+{
+	"commentStamp" : "jm 3/9/2005 11:40",
+	"super" : "ImageFrameMorph",
+	"category" : "SteloSquelch-UI-Dialogs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"directoryBarMorph",
+		"contentsPaneMorph",
+		"feedbackMorph",
+		"scratchInfoClient",
+		"currentDir",
+		"extensions",
+		"fetchInProgress",
+		"showThumbnails",
+		"thumbnailFetchProcess",
+		"scratchProjectFetcher",
+		"lastUpMSecs",
+		"wasSelected",
+		"isDoubleClick",
+		"finalSelection",
+		"freezeFocus",
+		"topBarMorph",
+		"directoryBarArrowMorph"
+	],
+	"name" : "ScratchFilePicker",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+private
+defaultTurtleCount
+	^ 1

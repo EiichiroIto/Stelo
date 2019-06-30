@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Pen",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"points"
+	],
+	"name" : "PenPointRecorder",
+	"type" : "normal"
+}

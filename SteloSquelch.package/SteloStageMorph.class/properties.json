@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "ScriptableScratchMorph",
+	"category" : "SteloSquelch-Stelost",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"isQuarterSize",
+		"sprites",
+		"microworld",
+		"steloDisplay",
+		"process",
+		"updateDisplay",
+		"events"
+	],
+	"name" : "SteloStageMorph",
+	"type" : "normal"
+}

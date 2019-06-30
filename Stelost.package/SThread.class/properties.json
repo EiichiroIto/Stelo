@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Stelost-Scripts",
+	"classinstvars" : [
+		"cachedSymbols"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"world",
+		"stack",
+		"pc",
+		"codes",
+		"id",
+		"isTerminated",
+		"breedId"
+	],
+	"name" : "SThread",
+	"type" : "normal"
+}

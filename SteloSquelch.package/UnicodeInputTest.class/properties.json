@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "jm 6/13/2008 17:04",
+	"super" : "Morph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"key",
+		"uchar"
+	],
+	"name" : "UnicodeInputTest",
+	"type" : "normal"
+}

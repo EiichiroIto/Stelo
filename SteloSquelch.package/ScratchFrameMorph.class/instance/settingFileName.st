@@ -1,0 +1,3 @@
+private
+settingFileName
+	^ 'Stelo.ini'

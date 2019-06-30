@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SCodeSymbol",
+	"category" : "Stelost-Bytecode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"labelId",
+		"address"
+	],
+	"name" : "SCodeSymbolWithJump",
+	"type" : "normal"
+}

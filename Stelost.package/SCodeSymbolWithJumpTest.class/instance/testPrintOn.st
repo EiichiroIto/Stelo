@@ -1,0 +1,7 @@
+tests-printing
+testPrintOn
+	| c |
+	c := SCodeSymbolWithJump selector: #abc labelId: 1.
+	self assert: c asString equals: '<symbol=abc,id=1,jump=nil>'.
+	c address: 2.
+	self assert: c asString equals: '<symbol=abc,id=1,jump=2>'.

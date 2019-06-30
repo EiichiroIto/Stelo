@@ -1,0 +1,3 @@
+other
+helpScreenName
+	^ self eventName

@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "jm 10/28/2008 10:13",
+	"super" : "DividedImageFrameMorph",
+	"category" : "SteloSquelch-UI-Panes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scrollPane",
+		"stagePane",
+		"thumbWidth",
+		"itemExtent",
+		"spritePane",
+		"buttonPane",
+		"spriteLabel"
+	],
+	"name" : "ScratchLibraryMorph",
+	"type" : "normal"
+}

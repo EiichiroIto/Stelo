@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jm 7/1/2004 23:16",
+	"super" : "BorderedMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ScratchBlockPaletteMorph",
+	"type" : "normal"
+}

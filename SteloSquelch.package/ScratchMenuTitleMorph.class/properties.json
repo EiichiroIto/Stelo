@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "StringMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"target",
+		"selector"
+	],
+	"name" : "ScratchMenuTitleMorph",
+	"type" : "normal"
+}

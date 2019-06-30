@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "jm 6/26/2006 10:29",
+	"super" : "Morph",
+	"category" : "SteloSquelch-UI-Panes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"frame",
+		"stage",
+		"buttons",
+		"flagButton",
+		"steloDisplay"
+	],
+	"name" : "ScratchPresenterMorph",
+	"type" : "normal"
+}

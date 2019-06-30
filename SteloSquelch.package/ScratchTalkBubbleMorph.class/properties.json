@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "ImageFrameMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"leftPointerForm",
+		"rightPointerForm",
+		"pointLeft",
+		"contentsMorph"
+	],
+	"name" : "ScratchTalkBubbleMorph",
+	"type" : "normal"
+}

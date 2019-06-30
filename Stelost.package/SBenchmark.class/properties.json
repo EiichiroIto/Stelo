@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Stelost-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBenchmark",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+accessing
+highlightColor
+
+	^ ScratchFrameMorph menuHighlightColor

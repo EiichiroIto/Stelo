@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "FFILibrary",
+	"category" : "Stelost-Plugins",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SteloLibrary",
+	"type" : "normal"
+}

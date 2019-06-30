@@ -1,0 +1,3 @@
+variables
+patchVarNamesMenu
+	^ microworld patches userDefinedVarNames

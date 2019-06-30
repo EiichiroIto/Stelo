@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Stelost-Bytecode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stream",
+		"labelId"
+	],
+	"name" : "SBytecodeGenerator",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "ArgMorph",
+	"category" : "SteloSquelch-Blocks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"menuIconMorph",
+		"morph"
+	],
+	"name" : "SpriteArgMorph",
+	"type" : "normal"
+}

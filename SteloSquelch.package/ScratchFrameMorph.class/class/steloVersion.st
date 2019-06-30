@@ -1,0 +1,3 @@
+stelo
+steloVersion
+	^ 'SteloV01'

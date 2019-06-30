@@ -1,0 +1,3 @@
+private
+errorOccuered
+	isTerminated := true.

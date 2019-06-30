@@ -1,0 +1,3 @@
+*SteloSquelch
+localized
+	^ self

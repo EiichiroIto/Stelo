@@ -1,0 +1,3 @@
+*SteloSquelch
+toolType
+	^ toolType

@@ -1,0 +1,3 @@
+accessing
+breedsCount
+	^ breeds size

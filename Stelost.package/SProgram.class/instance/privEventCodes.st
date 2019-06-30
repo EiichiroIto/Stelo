@@ -1,0 +1,3 @@
+private
+privEventCodes
+	^ eventCodes

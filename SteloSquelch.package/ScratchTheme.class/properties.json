@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"AvailableThemes",
+		"CurrentTheme"
+	],
+	"instvars" : [
+		"colors",
+		"forms"
+	],
+	"name" : "ScratchTheme",
+	"type" : "normal"
+}

@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "Stelost-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"microworld",
+		"cellWidth",
+		"cellHeight",
+		"offsetX",
+		"offsetY",
+		"modelExtent",
+		"cell",
+		"offset",
+		"forceModelChanged"
+	],
+	"name" : "SDisplay",
+	"type" : "normal"
+}

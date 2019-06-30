@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DialogBoxMorph",
+	"category" : "SteloSquelch-UI-Dialogs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"typeinMorph"
+	],
+	"name" : "StringDialog",
+	"type" : "normal"
+}

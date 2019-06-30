@@ -1,0 +1,4 @@
+accessing
+normalColor
+
+	^ ScratchFrameMorph menuNormalColor

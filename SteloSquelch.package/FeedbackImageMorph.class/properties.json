@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jm 6/3/2004 16:31",
+	"super" : "ImageMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FeedbackImageMorph",
+	"type" : "normal"
+}

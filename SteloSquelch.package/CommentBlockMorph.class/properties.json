@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "BlockMorph",
+	"category" : "SteloSquelch-Blocks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"labelMorph",
+		"showHideMorph",
+		"commentMorph",
+		"isShowing"
+	],
+	"name" : "CommentBlockMorph",
+	"type" : "normal"
+}

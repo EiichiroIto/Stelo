@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Stelost-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"vars",
+		"varNames"
+	],
+	"name" : "SVariables",
+	"type" : "normal"
+}

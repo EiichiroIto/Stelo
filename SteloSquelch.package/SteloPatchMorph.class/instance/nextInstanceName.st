@@ -1,0 +1,3 @@
+private
+nextInstanceName
+	^ 'Patch' localized

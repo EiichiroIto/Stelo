@@ -1,0 +1,3 @@
+drawing
+imageForm
+	^ self thumbnailForm

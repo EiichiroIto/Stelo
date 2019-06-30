@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "jm 4/5/2005 07:50",
+	"super" : "ScratchFilePickerEntry",
+	"category" : "SteloSquelch-UI-Dialogs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"thumbnailMorph",
+		"thumbnailForm",
+		"thumbnailReady"
+	],
+	"name" : "ScratchFilePickerImageEntry",
+	"type" : "normal"
+}

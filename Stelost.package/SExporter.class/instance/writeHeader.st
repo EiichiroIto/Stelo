@@ -1,0 +1,3 @@
+private
+writeHeader
+	self subclassResponsibility

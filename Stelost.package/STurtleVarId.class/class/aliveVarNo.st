@@ -1,0 +1,3 @@
+accessing
+aliveVarNo
+	^ 2

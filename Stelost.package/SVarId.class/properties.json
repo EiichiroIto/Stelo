@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SteloId",
+	"category" : "Stelost-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"varNames"
+	],
+	"name" : "SVarId",
+	"type" : "normal"
+}

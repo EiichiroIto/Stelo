@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ArgMorph",
+	"category" : "SteloSquelch-Blocks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BooleanArgMorph",
+	"type" : "normal"
+}

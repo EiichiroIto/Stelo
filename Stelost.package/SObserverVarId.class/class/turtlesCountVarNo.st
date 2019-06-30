@@ -1,0 +1,3 @@
+accessing
+turtlesCountVarNo
+	^ 3

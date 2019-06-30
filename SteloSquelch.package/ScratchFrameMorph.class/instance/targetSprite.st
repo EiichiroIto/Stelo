@@ -1,0 +1,3 @@
+stelo
+targetSprite
+	^ scriptsPane target

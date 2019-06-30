@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BorderedMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ScratchSpriteLibraryMorph",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Stelost-Scripts",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"breeds"
+	],
+	"name" : "SEventCodes",
+	"type" : "normal"
+}

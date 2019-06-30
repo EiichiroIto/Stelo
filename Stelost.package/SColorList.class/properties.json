@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Stelost-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"DefaultList"
+	],
+	"instvars" : [
+		"colors"
+	],
+	"name" : "SColorList",
+	"type" : "normal"
+}

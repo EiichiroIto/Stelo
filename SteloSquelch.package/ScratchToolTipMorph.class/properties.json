@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "BorderedMorph",
+	"category" : "SteloSquelch-UI-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"target",
+		"message",
+		"initialCursorPoint"
+	],
+	"name" : "ScratchToolTipMorph",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "StringDialog",
+	"category" : "SteloSquelch-UI-Dialogs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"allSpritesRadioButton",
+		"thisSpriteRadioButton",
+		"spriteSpecificFlag",
+		"radioButtons"
+	],
+	"name" : "NewVariableDialog",
+	"type" : "normal"
+}

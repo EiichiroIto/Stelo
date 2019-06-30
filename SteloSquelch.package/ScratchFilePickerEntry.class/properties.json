@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "jm 3/9/2005 11:40",
+	"super" : "BorderedMorph",
+	"category" : "SteloSquelch-UI-Dialogs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nameMorph",
+		"highlit",
+		"directory",
+		"entryName",
+		"entryIsDirectory"
+	],
+	"name" : "ScratchFilePickerEntry",
+	"type" : "normal"
+}

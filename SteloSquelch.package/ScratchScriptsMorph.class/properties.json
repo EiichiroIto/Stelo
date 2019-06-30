@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "jm 8/3/2003 09:30",
+	"super" : "PasteUpMorph",
+	"category" : "SteloSquelch-UI-Panes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"feedbackMorph",
+		"screenshooting"
+	],
+	"name" : "ScratchScriptsMorph",
+	"type" : "normal"
+}
