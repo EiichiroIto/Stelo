@@ -23,8 +23,7 @@ storeObj: anObject on: aStream showProgress: showProgress
 		ifTrue: [
 			i := 0.  "object counter for progress bar"
 			'Saving...'
-				displayProgressAt: Sensor cursorPoint
-				from: 0 to: sortedObjEntries size
+				displayProgressFrom: 0 to: sortedObjEntries size
 				during:  [:progressBar |
 					sortedObjEntries do: [:objEntry |
 						progressBar value: (i := i + 1).

@@ -13,8 +13,7 @@ readObjFrom: aStream showProgress: showProgress
 		ifTrue: [
 			tenPercent := objCount // 10.
 			('Reading' localized, ScratchTranslator ellipsesSuffix)
-				displayProgressAt: Sensor cursorPoint
-				from: 0 to: objCount + tenPercent
+				displayProgressFrom: 0 to: objCount + tenPercent
 				during: [:progressBar |
 					1 to: objCount do: [:i |
 						objects addLast: self readObjectRecord.
