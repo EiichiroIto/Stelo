@@ -24,8 +24,6 @@ blockSpecs
 			('clear turtles'			-	clearTurtles)
 			('clear graphics'		-	clearGraphics)
 			('clear all'					-	clearAll)
-			-
-			('turtles %m count'			r turtlesCount:)
 		'patch'
 			('scale patch''s %p color %c from %n to %n'  - scalePatch:color:from:to: '' 15 1 100)
 			('multiply patch''s %p by %n'	- multiplyVar:by: '' 0.9)

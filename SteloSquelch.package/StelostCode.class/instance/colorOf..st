@@ -1,3 +1,3 @@
-color ops
+private
 colorOf: aSymbol
 	^ SColorList colorOf: aSymbol

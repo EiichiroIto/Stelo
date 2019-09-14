@@ -1,3 +1,3 @@
 variables
 varFor: aString breed: anInteger
-	^ (self stageMorph microworld breedsOf: anInteger) varNoFor: aString
+	^ (self stageMorph breedOf: anInteger) varNoFor: aString

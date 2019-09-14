@@ -1,3 +1,0 @@
-private
-nextInstanceName
-	^ 'Observer' localized

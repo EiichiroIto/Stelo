@@ -2,13 +2,14 @@ tests
 testAfterStartup
 	| p w |
 	w := SMicroWorld new.
-	p := SProcess microworld: w program: SProgram new.
-	w clearRaisedEvents.
+	p := w newProcess program: SProgram new.
+	p privRunningEvents: #().
+	p privTransition: #afterStartup.
 	p afterStartup.
 	self assert: p privTransition equals: #afterSetup.
 	self assertCollection: p privRunningEvents equals: {SEventId setupEventNo}.
-	w raiseEvent: 8.
-	w raiseEvent: 9.
+	p privRunningEvents: #(8 9) asSet.
+	p privTransition: #afterStartup.
 	p afterStartup.
 	self assert: p privTransition equals: #afterStartup.
 	self assert: (p privRunningEvents isKindOf: Set).

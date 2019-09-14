@@ -1,8 +1,11 @@
 menu/button actions
 addSpriteMorph
 	| result |
-	result := ScratchFileChooserDialog chooseSpriteCostumeFor: self.
+	result := ScratchFileChooserDialog
+		chooseExistingFileType: #project
+		extensions: #(turtle)
+		title: 'New Breed'.
 	result = #cancelled
 		ifTrue: [ ^ self ].
-	(result asLowercase endsWith: '.turtle')
-		ifTrue: [ ^ self importSpriteOrProject: result ].
+	(result asLowercase endsWith: SteloTurtleMorph extension)
+		ifTrue: [ ^ self importSpriteOrProject: result ]

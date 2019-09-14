@@ -1,7 +1,7 @@
 tests-misc ops
 testRandomFromTo
 	| t |
-	t := SThread microworld: SMicroWorld new.
+	t := SThread sworld: SMicroWorld new.
 	100
 		timesRepeat: [ self assert: t stack size equals: 0.
 			t push: 5.

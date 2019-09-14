@@ -1,8 +1,8 @@
-arg generator
+private
 argString: anArgMorph 
 	| v |
 	^ anArgMorph labelMorph
-		ifNil: [self error: 'nil arg']
+		ifNil: [0]
 		ifNotNil: 
 			[v := anArgMorph evaluate.
 			self literalStringFrom: v]

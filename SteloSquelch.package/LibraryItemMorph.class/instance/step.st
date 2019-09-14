@@ -13,4 +13,5 @@ step
 	changeTime = lastUpdateMSecs ifFalse: [
 		self updateThumbnail.
 		lastUpdateMSecs := changeTime]."
+	self updateThumbnail.
 	Sensor peekAnyButtonPressed ifFalse: [self updateNameAndInfo].

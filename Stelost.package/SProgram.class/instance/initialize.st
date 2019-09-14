@@ -1,3 +1,4 @@
 initialization
 initialize
-	eventCodes := Dictionary new.
+	entryPoints := Dictionary new.
+	codes := Array new.

@@ -1,9 +1,9 @@
 tests-control ops
 testDoUntilBegin
 	| w b t i |
-	w := SMicroWorld new.
+	w := self newWorld.
 	w create: 3 turtles: 1.
-	(w breedsOf: 3) headingAt: 1 put: 0.
+	(w breedOf: 3) headingAt: 1 put: 0.
 	b := SBytecodeGenerator new.
 	i := b doUntilBegin.
 	b forward: 1.
@@ -11,8 +11,9 @@ testDoUntilBegin
 	b getXpos.
 	b appendSymbol: #less.
 	b doUntilEnd: nil id: i.
-	self assert: (w var: STurtleVarId xVarNo breedNo: 3 at: 1) equals: 0.
-	t := SThread microworld: w.
+	self assert: (w var: STurtleVarId xVarNo breed: 3 at: 1) equals: 0.
+	t := SThread sworld: w.
 	t forBreedNo: 3 index: 1.
-	t execute: b code.
-	self assert: (w var: STurtleVarId xVarNo breedNo: 3 at: 1) equals: 6
+	t codes: b code.
+	t execute: 1.
+	self assert: (w var: STurtleVarId xVarNo breed: 3 at: 1) equals: 6

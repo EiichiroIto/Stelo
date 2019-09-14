@@ -1,3 +1,3 @@
 variables
 deleteVariable: aString
-	self target deleteVariable: aString
+	breed deleteVariable: aString

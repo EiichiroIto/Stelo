@@ -1,8 +1,5 @@
 enumerating
 livingOnesDo: aBlock
-	| aliveVar |
-	aliveVar := variables arrayOfVarNo: STurtleVarId aliveVarNo.
-	aliveVar
-		withIndexDo: [ :each :index | 
-			each
-				ifTrue: [ aBlock value: index ] ]
+	1 to: variables size do: [ :each | 
+		(self flag: STurtleVarId aliveFlagNo at: each)
+			ifTrue: [ aBlock value: each ] ]

@@ -5,5 +5,6 @@ testRandomFromTo
 	10
 		timesRepeat: [ r := b randomFrom: 1 to: 10.
 			self assert: r isNil.
-			t := SThread microworld: SMicroWorld new.
-			self assert: ((t evaluate: b code) between: 1 and: 10) ].
+			t := SThread sworld: SMicroWorld new.
+			t codes: b code.
+			self assert: ((t evaluate: 1) between: 1 and: 10) ].

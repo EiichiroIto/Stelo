@@ -1,3 +1,3 @@
 enumerating
 livingOnesDo: aBlock
-	1 to: self count do: [ :each | aBlock value: each ].
+	1 to: self size do: [ :each | aBlock value: each ].

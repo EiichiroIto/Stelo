@@ -1,3 +1,3 @@
 variables
 variableNameInUse: aString
-	^ self target variableNameInUse: aString.
+	^ breed variableNameInUse: aString.

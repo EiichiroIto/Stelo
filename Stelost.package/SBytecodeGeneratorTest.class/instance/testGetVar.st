@@ -1,20 +1,22 @@
 tests-variable ops
 testGetVar
 	| w vid b t ret |
-	w := SMicroWorld new.
+	w := self newWorld.
 	w create: 3 turtles: 2.
-	vid := (w breedsOf: 3) addVariable: 'a'.
+	vid := (w breedOf: 3) addVariable: 'a'.
 	b := SBytecodeGenerator new.
 	ret := b getVar: vid.
 	self assert: ret isNil.
-	t := SThread microworld: w.
+	t := SThread sworld: w.
 	t forBreedNo: 3 index: 1.
-	self assert: (t evaluate: b code) equals: 0.
+	t codes: b code.
+	self assert: (t evaluate: 1) equals: 0.
 	w
 		var: vid
-		breedNo: 3
+		breed: 3
 		at: 1
 		put: 20.
-	t := SThread microworld: w.
+	t := SThread sworld: w.
 	t forBreedNo: 3 index: 1.
-	self assert: (t evaluate: b code) equals: 20
+	t codes: b code.
+	self assert: (t evaluate: 1) equals: 20

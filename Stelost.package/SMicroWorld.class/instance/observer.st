@@ -1,3 +1,3 @@
-accessing
+private
 observer
-	^ self
+	^ breeds at: SBreedId observerBreedNo

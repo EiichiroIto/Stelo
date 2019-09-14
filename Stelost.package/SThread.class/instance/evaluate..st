@@ -1,5 +1,5 @@
 accessing
-evaluate: aCollection
-	self codes: aCollection.
+evaluate: anInteger
+	self pc: anInteger.
 	[ self doOneCycle ] whileTrue.
 	^ self pop

@@ -1,3 +1,3 @@
 arithmetic ops
-truncated: aMorph
-	^ bcGenerator truncated: (aMorph blockArgs first argString: parser)
+truncated: x
+	^ bcGenerator truncated: (x argString: parser)

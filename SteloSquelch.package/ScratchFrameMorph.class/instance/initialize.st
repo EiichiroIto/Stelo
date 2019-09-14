@@ -11,6 +11,8 @@ initialize
 	"loginName := ''.
 	loginPassword := ''."
 	viewMode := #normal.
+	sworldMode := self defaultSWorldMode.
+	stepTime := 0.
 
 	self createBasicPanes.
 	self createLogo.

@@ -1,4 +1,4 @@
-menu/button actions
+stelo
 sendJsonCode
 	| addr json |
 	addr := StringDialog

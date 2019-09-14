@@ -1,8 +1,8 @@
 tests-observer ops
 testCreatePatch
 	| w e |
-	w := SMicroWorld new.
-	e := SThread microworld: w.
+	w := self newWorld.
+	e := SThread sworld: w.
 	self assert: w patches rows equals: 100.
 	self assert: w patches cols equals: 100.
 	self assert: e stack size equals: 0.

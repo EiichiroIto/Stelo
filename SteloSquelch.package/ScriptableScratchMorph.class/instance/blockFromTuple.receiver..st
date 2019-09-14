@@ -14,9 +14,17 @@ blockFromTuple: tuple receiver: scriptOwner
 			commandSpec: tuple second;
 			selector: #contentsOfList:]."
 
-	(#(EventHatMorph ) includes: k) ifTrue: [
+	(#(EventHatMorph SubHatMorph ) includes: k) ifTrue: [
 		block := self hatBlockFromTuple: tuple receiver: scriptOwner.
 		^ block].
+
+	(#(turtle:at: turtlesCount: ) includes: k) ifTrue: [ 
+		(tuple at: 2) isString
+			ifTrue: [ tuple at: 2 put: (self frameMorph workPane findObjName: (tuple at: 2)) ]].
+
+	(#(createTurtleSize:breedId: kill:breed: getTurtle:breed:var:) includes: k) ifTrue: [
+		(tuple at: 3) isString
+			ifTrue: [ tuple at: 3 put: (self frameMorph workPane findObjName: (tuple at: 3)) ]].
 
 	#scratchComment = k ifTrue: [
 		block := ScratchCommentMorph new.

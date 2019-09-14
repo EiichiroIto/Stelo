@@ -2,4 +2,4 @@ observer ops
 createPatch
 	| count |
 	count := self pop.
-	world createPatchOrder: count asInteger.
+	world createPatch: count asInteger.

@@ -1,3 +1,3 @@
 variables
 patchVarNamesMenu
-	^ self stageMorph microworld patches userDefinedVarNames
+	^ self stageMorph patchVarNamesMenu

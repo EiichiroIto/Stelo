@@ -18,13 +18,13 @@ blockSpecs
 	| blocks |
 	blocks := #(
 		'basic'
-			('forward %n'		- forward: 5)
+			('forward %n'		- forward: 1)
 			('turn %n'				- turn: 15)
 			('heading %n'		- setHeading: 0)
 			-
-			('change x by %n'		-	changeXposBy: 5)
+			('change x by %n'		-	changeXposBy: 1)
 			('set x to %n'				-	setXpos: 0)
-			('change y by %n'		-	changeYposBy: 5)
+			('change y by %n'		-	changeYposBy: 1)
 			('set y to %n'				-	setYpos: 0)
 			-
 			('hatch'					-	hatch)
@@ -43,22 +43,26 @@ blockSpecs
 			('dy'					r	dy)
 			('breed id'			r	getBreedId)
 			-
-			('distance to x %n y %n'	r	distanceToX:y: 0 0)
-			('direction to x %n y %n'	r	directionToX:y: 0 0)
-			('one of %m at x %n y %n'	r	turtle:x:y: '')
+			('one of %m at %n'				r	turtle:at: '' 'where')
+			('distance to %n'				r	distanceTo: 'where')
+			('direction to %n'				r	directionTo: 'where')
 			('aim high %p'			r	aimHigh: '')
 			-
-			('%n of %m ''s %t'	r	getTurtleVar:breed:id:		0 '' '')
+			('%n of %m ''s %t'	r	getTurtle:breed:var:		0 '' '')
+			-
+			('here'								r	here)
+			('front'							r	front)
+			('x %n y %n from here'	r	relativeToX:y:		0 0)
+			('r %n theta %n from here'	r	relativeToR:theta:		0 0)
 		'control'
 			('when setup'		S	-)
-			('break'				-	break)
 		'patch'
-			('patch color at x %n y %n' 			r 	getPatchColorX:y: 0 0)
-			('set patch color at x %n y %n to %c'			- setPatchColorX:y:to: 0 0 15)
+			('patch color at %n' 			r 	getPatchColorAt: 'where')
+			('set patch color at %n to %c'			- setPatchColorAt:to: 'where' 15)
 			-
-			('patch''s %p at x %n y %n'							r 	getPatchVar:x:y: 	'' 0 0)
-			('set patch''s %p at x %n y %n to %n'			-	setPatchVar:x:y:to: '' 0 0 0)
-			('change patch''s %p at x %n y %n by %n'		-	changePatchVar:x:y:by: '' 0 0 1)
+			('patch''s %p at %n'							r 	getPatchVar:at: 	'' 'where')
+			('set patch''s %p at %n to %n'			-	setPatchVar:at:to: '' 'where' 0)
+			('change patch''s %p at %n by %n'		-	changePatchVar:at:by: '' 'where' 1)
 	).
 
 	^ blocks, self colorBlocks, super blockSpecs

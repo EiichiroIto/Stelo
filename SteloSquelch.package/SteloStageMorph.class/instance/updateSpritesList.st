@@ -6,3 +6,4 @@ updateSpritesList
 	sprites := OrderedCollection new.
 	frame libraryPane spriteThumbnails
 		do: [ :m | m target ifNotNil: [ sprites addLast: m target ] ].
+	self backupBreeds.

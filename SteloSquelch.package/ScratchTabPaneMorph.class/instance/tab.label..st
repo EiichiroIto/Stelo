@@ -5,8 +5,8 @@ tab: aResizableToggleButton2 label: aString
 	aResizableToggleButton2
 		label: aString font: (ScratchFrameMorph getFont: #Tab).
 
-	ScratchTranslator renderWithSqueak ifFalse: [
-		aResizableToggleButton2 forceUnicodeRendering: true].
+	"ScratchTranslator renderWithSqueak ifFalse: [
+		aResizableToggleButton2 forceUnicodeRendering: true]."
 
 	"account for the size of the tab skin."
 	aResizableToggleButton2 extent: (aResizableToggleButton2 extent - (0@10)).

@@ -1,3 +1,0 @@
-private
-nextInstanceName
-	self subclassResponsibility.

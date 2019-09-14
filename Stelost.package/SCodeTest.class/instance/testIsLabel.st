@@ -2,4 +2,4 @@ tests-testing
 testIsLabel
 	| c |
 	c := SCode basicNew.
-	self assert: c isLabel not.
+	self deny: c isLabel.

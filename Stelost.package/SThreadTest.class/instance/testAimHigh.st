@@ -1,8 +1,8 @@
 tests-turtle ops
 testAimHigh
 	| w v t |
-	w := SMicroWorld new.
-	w createPatchOrder: 5.
+	w := self newWorld.
+	w createPatch: 5.
 	w create: 3 turtles: 1.
 	v := w patches addVariable: 'a'.
 	"
@@ -16,25 +16,25 @@ testAimHigh
 	w y: 3 at: 1 put: 0.
 	w
 		var: STurtleVarId headingVarNo
-		breedNo: 3
+		breed: 3
 		at: 1
 		put: 45.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 18
 		put: 1.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 19
 		put: 2.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 14
 		put: 3.
-	t := SThread microworld: w.
+	t := SThread sworld: w.
 	t forBreedNo: 3 index: 1.
 	t push: v.
 	t aimHigh.

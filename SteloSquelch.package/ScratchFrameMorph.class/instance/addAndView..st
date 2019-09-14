@@ -8,8 +8,8 @@ addAndView: aSpriteMorph
 	i := 0.
 	[pos includes: (p := (10 * i) asPoint)] whileTrue: [i := i + 1].
 	workPane addMorphFront: aSpriteMorph.
-	aSpriteMorph objName: aSpriteMorph nextInstanceName.
+	aSpriteMorph objName: aSpriteMorph instanceName.
 	aSpriteMorph referencePosition: p.
 	aSpriteMorph startStepping.
-	workPane sprites addLast: aSpriteMorph.
+	workPane addSprite: aSpriteMorph.
 	self view: aSpriteMorph tab: 'Scripts' category: 'basic'.

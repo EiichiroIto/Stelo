@@ -26,6 +26,7 @@ uncoloredArgMorphFor: specString
 	$n = code ifTrue: [^ ExpressionArgMorph new numExpression: '10'].
 	$p = code ifTrue: [^ ChoiceArgMorph new getOptionsSelector: #patchVarNamesMenu; choice: ''].
 	"$N = code ifTrue: [^ ExpressionArgMorphWithMenu new numExpression: '60'; menuSelector: #noteSelector]."
+	$S = code ifTrue: [^ ChoiceArgMorph new getOptionsSelector: #subNames; choice: ''].
 	$s = code ifTrue: [^ ExpressionArgMorph new stringExpression: ''].
 	$t = code ifTrue: [^ ChoiceArgMorph new getOptionsSelector: #turtleVarNamesMenu; choice: ''].
 	"$S = code ifTrue: [^ ChoiceOrExpressionArgMorph new getOptionsSelector: #soundNames; choice: 'pop']."

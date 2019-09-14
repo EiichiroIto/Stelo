@@ -1,4 +1,4 @@
 accessing
 clear
 	variables := SVariables new updateVarId: varId.
-	variables setVar: varId class aliveVarNo toAll: false.
+	variables setVar: varId class flagVarNo toAll: 0.

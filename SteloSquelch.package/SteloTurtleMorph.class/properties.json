@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"breedNo"
-	],
+	"instvars" : [ ],
 	"name" : "SteloTurtleMorph",
 	"type" : "normal"
 }

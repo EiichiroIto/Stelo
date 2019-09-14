@@ -5,9 +5,7 @@ startStageRecording
 		chooseNewFileDefault: ''
 		title: 'Start Stage Recording'
 		type: #scriptsSnapshot.
-	fName = #cancelled
-		ifTrue: [ ^ self ].
-	fName size = 0
+	(fName isEmpty or: [fName = #cancelled])
 		ifTrue: [ ^ self ].
 	(fName asLowercase endsWith: '.gif')
 		ifFalse: [ fName := fName , '.gif' ].
@@ -20,5 +18,5 @@ startStageRecording
 			fr delete ].
 	stageRecorder := SRecorder new
 		openFileNamed: fName;
-		microworld: workPane microworld;
+		sworld: workPane sworld;
 		extent: 200 @ 200.

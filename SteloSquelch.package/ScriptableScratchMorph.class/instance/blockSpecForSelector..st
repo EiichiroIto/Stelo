@@ -4,6 +4,6 @@ blockSpecForSelector: aSymbol
 
 	self class blockSpecs do: [:spec |
 		((spec isKindOf: Array) and: [(spec at: 3) = aSymbol])
-			ifTrue: [^ spec first]].
+			ifTrue: [^ spec]].
 
 	^ nil

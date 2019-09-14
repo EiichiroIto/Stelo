@@ -1,3 +1,0 @@
-private
-writeHeader
-	self subclassResponsibility

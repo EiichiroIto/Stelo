@@ -1,3 +1,3 @@
 stelo
 varId
-	^ self target varId
+	^ breed varId

@@ -7,7 +7,6 @@ initialize
 	self color: Color brown.
 	labelMorph := StringMorph new
 		font: (ScratchFrameMorph getFont: #Arg);
-		forceUnicodeRendering: true;
 		color: Color white.
 	self addMorph: labelMorph.
 	menuIconMorph := ImageMorph new form: DropDownMenuForm.

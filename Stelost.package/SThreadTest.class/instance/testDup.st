@@ -1,7 +1,7 @@
 tests-misc ops
 testDup
 	| t |
-	t := SThread microworld: SMicroWorld.
+	t := SThread sworld: SMicroWorld.
 	self assert: t stack size equals: 0.
 	t push: 10.
 	self assert: t stack size equals: 1.

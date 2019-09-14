@@ -2,8 +2,11 @@ accessing
 step
 	self isRunning
 		ifFalse: [ ^ self ].
-	world clearRaisedEvents.
+	sworld
+		clearRaisedEvents;
+		incrementTicks.
 	[ self doOneCycle ] whileTrue.
 	self isRunning
 		ifFalse: [ ^ self ].
+	runningEvents := sworld raisedEvents copy.
 	self perform: transition.

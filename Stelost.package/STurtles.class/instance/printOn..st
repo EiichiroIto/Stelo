@@ -2,5 +2,5 @@ printing
 printOn: aStream
 	aStream
 		nextPutAll: 'Turtles(';
-		nextPutAll: self count asString;
+		nextPutAll: self countAlive asString;
 		nextPut: $).

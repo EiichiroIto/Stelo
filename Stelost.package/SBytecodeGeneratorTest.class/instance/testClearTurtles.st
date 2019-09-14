@@ -1,26 +1,27 @@
 tests-observer ops
 testClearTurtles
 	| w b t |
-	w := SMicroWorld new.
-	w createPatchOrder: 3.
+	w := self newWorld.
+	w createPatch: 3.
 	w create: 3 turtles: 2.
 	w
 		var: SPatchVarId colorVarNo
-		breedNo: 2
+		breed: 2
 		at: 1
 		put: 3.
 	b := SBytecodeGenerator new.
 	b clearTurtles.
 	self
-		assert: (w var: SPatchVarId colorVarNo breedNo: 2 at: 1)
+		assert: (w var: SPatchVarId colorVarNo breed: 2 at: 1)
 		equals: 3.
-	self assert: w patches count equals: 9.
-	self assert: (w breedsOf: 3) count equals: 2.
-	t := SThread microworld: w.
+	self assert: w patches size equals: 9.
+	self assert: (w breedOf: 3) countAlive equals: 2.
+	t := SThread sworld: w.
 	t forObserver.
-	t execute: b code.
+	t codes: b code.
+	t execute: 1.
 	self
-		assert: (w var: SPatchVarId colorVarNo breedNo: 2 at: 1)
+		assert: (w var: SPatchVarId colorVarNo breed: 2 at: 1)
 		equals: 3.
-	self assert: w patches count equals: 9.
-	self assert: (w breedsOf: 3) count equals: 0
+	self assert: w patches size equals: 9.
+	self assert: (w breedOf: 3) countAlive equals: 0

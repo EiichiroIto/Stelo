@@ -1,5 +1,3 @@
-misc ops
-broadcast: aMorph
-	| msg |
-	msg := 	aMorph blockArgs first argString: parser.
-	bcGenerator broadcast: msg.
+control ops
+broadcast: msg
+	bcGenerator broadcast: [ msg argString: parser ].

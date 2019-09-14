@@ -1,6 +1,6 @@
 tests-accessing
 testStack
 	| e |
-	e := SThread microworld: SMicroWorld new.
+	e := SThread sworld: SMicroWorld new.
 	self assert: e stack isCollection.
 	self assert: e stack isEmpty.

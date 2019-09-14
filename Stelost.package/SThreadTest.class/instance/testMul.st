@@ -1,7 +1,7 @@
 tests-arithmetic ops
 testMul
 	| t |
-	t := SThread microworld: SMicroWorld new.
+	t := SThread sworld: SMicroWorld new.
 	t push: 10.
 	t push: 5.
 	self assert: t stack size equals: 2.

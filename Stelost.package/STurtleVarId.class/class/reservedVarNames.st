@@ -1,3 +1,3 @@
 private
 reservedVarNames
-	^ #(color alive x y heading penDown)
+	^ #(color flag x y heading)

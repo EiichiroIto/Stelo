@@ -8,11 +8,14 @@
 	"instvars" : [
 		"isQuarterSize",
 		"sprites",
-		"microworld",
 		"steloDisplay",
 		"process",
 		"updateDisplay",
-		"events"
+		"events",
+		"sworld",
+		"lastMSec",
+		"lastTicks",
+		"fpsCount"
 	],
 	"name" : "SteloStageMorph",
 	"type" : "normal"

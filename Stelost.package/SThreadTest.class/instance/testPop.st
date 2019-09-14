@@ -1,7 +1,7 @@
 tests-private
 testPop
 	| e |
-	e := SThread microworld: SMicroWorld new.
+	e := SThread sworld: SMicroWorld new.
 	e push: 10.
 	e push: 20.
 	self assertCollection: e stack asArray equals: #(10 20).

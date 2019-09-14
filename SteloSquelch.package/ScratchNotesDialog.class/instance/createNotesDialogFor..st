@@ -10,9 +10,10 @@ createNotesDialogFor: aScratchFrameMorph
 		contents: '';
 		font: commentFont;
 		backForm: (ScratchFrameMorph skinAt: #stringFieldFrame);
+		textColor: ScratchFrameMorph dialogBoxTextColor;
 		width: 300.
 
-	self title: 'Project Notes'.
+	self title: 'Project Notes' localized.
 	mainColumn addMorphBack: commentMorph.
 	mainColumn addMorphBack: buttonRow.
 

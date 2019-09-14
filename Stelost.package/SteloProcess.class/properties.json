@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Stelost-Scripts",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"program",
+		"sworld"
+	],
+	"name" : "SteloProcess",
+	"type" : "normal"
+}

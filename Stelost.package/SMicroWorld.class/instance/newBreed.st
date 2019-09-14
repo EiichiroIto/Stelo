@@ -1,6 +1,6 @@
-accessing
+private
 newBreed
-	| bid |
-	bid := breedId newNo.
-	breeds := breeds forceTo: bid paddingWith: (STurtles new breedId: bid).
-	^ bid
+	| breed |
+	breed := self observer newTurtle.
+	self addBreed: breed.
+	^ breed

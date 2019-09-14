@@ -84,6 +84,7 @@ createScratchFileChooserFor: aScratchFrameMorph saving: savingFlag
 		borderWidth: 0;
 		contents: '';
 		font: commentFont;
+		textColor: ScratchFrameMorph dialogBoxTextColor;
 		extent: (210@110).
 	savingFlag
 		ifTrue: [commentMorph backForm: (ScratchFrameMorph skinAt: #stringFieldFrame).

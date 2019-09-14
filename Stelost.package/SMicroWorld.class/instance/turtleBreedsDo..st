@@ -1,4 +1,6 @@
-enumerating
+private
 turtleBreedsDo: aBlock
-	(breeds copyFrom: SBreedId defaultUserNo to: breedId size)
-		do: [ :each | aBlock value: each ]
+	SBreedId defaultUserNo to: breeds size do: [ :each | 
+		| turtle |
+		turtle := self breedOf: each.
+		turtle ifNotNil: [ aBlock value: turtle ] ]

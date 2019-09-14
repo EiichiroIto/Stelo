@@ -1,16 +1,18 @@
 tests-turtle  ops
 testDx
 	| w b t |
-	w := SMicroWorld new.
-	w createPatchOrder: 5.
+	w := self newWorld.
+	w createPatch: 5.
 	w create: 3 turtles: 2.
-	(w breedsOf: 3) headingAt: 1 put: 45.
-	(w breedsOf: 3) headingAt: 2 put: 60.
+	(w breedOf: 3) headingAt: 1 put: 45.
+	(w breedOf: 3) headingAt: 2 put: 60.
 	b := SBytecodeGenerator new.
 	b dx.
-	t := SThread microworld: w.
+	t := SThread sworld: w.
 	t forBreedNo: 3 index: 1.
-	self assert: (t evaluate: b code) closeTo: 45 degreeCos.
-	t := SThread microworld: w.
+	t codes: b code.
+	self assert: (t evaluate: 1) closeTo: 45 degreeCos.
+	t := SThread sworld: w.
 	t forBreedNo: 3 index: 2.
-	self assert: (t evaluate: b code) closeTo: 60 degreeCos
+	t codes: b code.
+	self assert: (t evaluate: 1) closeTo: 60 degreeCos

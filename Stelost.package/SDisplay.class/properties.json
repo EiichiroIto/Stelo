@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"microworld",
 		"cellWidth",
 		"cellHeight",
 		"offsetX",
@@ -14,7 +13,9 @@
 		"modelExtent",
 		"cell",
 		"offset",
-		"forceModelChanged"
+		"forceModelChanged",
+		"sworld",
+		"info"
 	],
 	"name" : "SDisplay",
 	"type" : "normal"

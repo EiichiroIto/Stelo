@@ -1,7 +1,7 @@
 tests-accessing variable
 testPenDownAt
 	| ts |
-	ts := STurtles new breedId: SBreedId turtleBreedNo.
+	ts := STurtles new breedNo: SBreedId turtleBreedNo.
 	ts clear.
 	ts create: 2.
 	self assert: (ts penDownAt: 1) equals: false.

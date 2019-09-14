@@ -1,9 +1,10 @@
 accessing
 code
-	| firstPass labelArray out |
+	| firstPass array out |
 	firstPass := stream contents.
-	labelArray := self labelArrayFor: firstPass.
-	self resolveJumpAddress: firstPass using: labelArray.
+	array := self labelsAndJumpsFor: firstPass.
+	self resolveJumpAddress: array second using: array first.
 	out := WriteStream on: Array new.
 	firstPass do: [ :each | each putOn: out ].
+	out nextPut: #stop.
 	^ out contents

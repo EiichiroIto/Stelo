@@ -1,7 +1,7 @@
 drawing
 drawWorldOn: aCanvas
 	| x0 x y colors index tc |
-	colors := microworld colors.
+	colors := sworld colors.
 	x0 := self left + offset x.
 	y := self top + offset y + (cell y * (modelExtent y - 1)).
 	index := 1.

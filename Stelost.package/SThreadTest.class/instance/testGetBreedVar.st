@@ -1,9 +1,9 @@
 tests-variable ops
 testGetBreedVar
 	| w t v |
-	w := SMicroWorld new.
-	t := SThread microworld: w.
-	w createPatchOrder: 4.
+	w := self newWorld.
+	t := SThread sworld: w.
+	w createPatch: 4.
 	v := w patches addVariable: 'a'.
 	t push: 1.
 	t push: v.

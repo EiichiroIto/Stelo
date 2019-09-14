@@ -15,7 +15,7 @@ colorBlocks
 			('brown'				r	colorBrown)
 			('yellow'			r	colorYellow)
 			('green'				r	colorGreen)
-			('lime'				r	colorlime)
+			('lime'				r	colorLime)
 			('turquoise'		r	colorTurquoise)
 			('cyan'				r	colorCyan)
 			('sky'					r	colorSky)

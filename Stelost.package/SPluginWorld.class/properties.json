@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SWorld",
+	"category" : "Stelost-Plugins",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"plugin"
+	],
+	"name" : "SPluginWorld",
+	"type" : "normal"
+}

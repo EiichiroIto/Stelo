@@ -1,3 +1,3 @@
-observer ops
-turtlesCount: aMorph	
-	^ bcGenerator turtlesCount: (aMorph blockArgs first argString: parser)
+basic ops
+turtlesCount: bno	
+	^ bcGenerator turtlesCount: (bno argString: parser)

@@ -4,7 +4,7 @@ viewerPageForCategory: aCategoryName
 
 	| bin x y |
 	(aCategoryName = 'variables' and: [ self isObserver not ]) ifTrue: [^ self variablesPage].
-	"aCategoryName = 'motion' ifTrue: [^ self viewerPageForMotion]."
+	"aCategoryName = 'control' ifTrue: [^ self viewerPageForControl]."
 	aCategoryName = 'sensing' ifTrue: [^ self viewerPageForSensing].
 
 	bin := ScratchBlockPaletteMorph new.

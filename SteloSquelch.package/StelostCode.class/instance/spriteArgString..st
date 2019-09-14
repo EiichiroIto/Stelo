@@ -1,4 +1,5 @@
-arg generator
+private
 spriteArgString: aMorph
-	aMorph ifNil: [ self error ].
+	(aMorph isKindOf: ScriptableScratchMorph)
+		ifFalse: [ self error ].
 	^ aMorph breedNo

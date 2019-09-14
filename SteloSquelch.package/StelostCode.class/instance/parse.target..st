@@ -1,6 +1,5 @@
 accessing
 parse: aTopBlock target: aMorph
 	targetMorph := aMorph.
-	bcGenerator := SBytecodeGenerator new.
-	(ScratchBlockParser codeGenerator: self) parseBlock: aTopBlock.
+	parser parseBlock: aTopBlock.
 	^ bcGenerator code.

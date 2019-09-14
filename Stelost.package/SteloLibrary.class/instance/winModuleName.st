@@ -1,3 +1,3 @@
 accessing platform
 winModuleName
-	^ 'test1.so'
+	^ 'stelo64.dll'

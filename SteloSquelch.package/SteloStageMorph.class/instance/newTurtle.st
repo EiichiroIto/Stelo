@@ -1,3 +1,3 @@
 accessing
 newTurtle
-	^ SteloTurtleMorph new breedNo: microworld newBreed
+	^ SteloTurtleMorph new breed: breed newTurtle

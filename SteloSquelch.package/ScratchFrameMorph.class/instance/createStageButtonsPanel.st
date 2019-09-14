@@ -8,9 +8,7 @@ createStageButtonsPanel
 		color: Color transparent;
 		listCentering: #center;
 		height: 20.
-
 	projectTitleMorph := StringMorph new
-		forceUnicodeRendering: true;
 		contents: '';
 		font: (ScratchFrameMorph getFont: #FrameMorphProjectTitle).
 	stageButtonsPanel
@@ -20,27 +18,32 @@ createStageButtonsPanel
 	"buttonSpecs defines the toolbar buttons; first is icon name, second is selector"
 	buttonSpecs := #(
 		"name	selector		tool tip"
-		(clearTurtles  	clearTurtles 	'Clear Turtles')
-		(clearGraphics  	clearGraphics 	'Clear Graphics')
-		(setup					startSetup		'Start Setup Scripts')
-		(go		shoutGo			'Start Loop Scripts')
-		(stop	stopAll				'Stop everything')).
-
-	buttonSpecs do: [:spec |
-		bName := spec first.
-		button := ToggleButton
-			onForm: (ScratchFrameMorph skinAt: (bName, 'ButtonGrayPressed') asSymbol)
-			offForm: (ScratchFrameMorph skinAt: (bName, 'ButtonGray') asSymbol)
-			overForm: (ScratchFrameMorph skinAt: (bName, 'ButtonGrayPressed') asSymbol).
-		button
-			target: self;
-			actionSelector: (spec at: 2);
-			isMomentary: true;
-			setBalloonText: (spec at: 3) localized.
-
-		stageButtonsPanel addMorphBack: button.
-		bName = #go ifTrue: [
-			flagButton := button.
-			stageButtonsPanel addMorphBack: (Morph new color: Color transparent; extent: 2@5)]].
-
-	titlePane addMorph: stageButtonsPanel.
+		#(clearTurtles		clearTurtles		'Clear turtles')
+		#(clearGraphics	clearGraphics		'Clear graphics')
+		#(setup					startSetup			'Start setup')
+		#(stop					stopAll					'Stop everything')
+		#(step					stepLoop				'Step loop')
+		#(loopSlow			startLoopSlow		'Start loop slowly')
+		#(loop					startLoop				'Start loop')
+		).
+	buttonSpecs
+		do: [ :spec | 
+			bName := spec first.
+			button := ToggleButton
+				onForm: (ScratchFrameMorph skinAt: (bName , 'ButtonPressed') asSymbol)
+				offForm: (ScratchFrameMorph skinAt: (bName , 'ButtonGray') asSymbol)
+				overForm: (ScratchFrameMorph skinAt: (bName , 'ButtonPressed') asSymbol).
+			button
+				target: self;
+				actionSelector: (spec at: 2);
+				isMomentary: true;
+				setBalloonText: (spec at: 3) localized.
+			stageButtonsPanel addMorphBack: button.
+			bName = #loop
+				ifTrue: [ flagButton := button.
+					stageButtonsPanel
+						addMorphBack:
+							(Morph new
+								color: Color transparent;
+								extent: 2 @ 5) ] ].
+	titlePane addMorph: stageButtonsPanel

@@ -1,7 +1,7 @@
 initialization
 forLoopEvent
 
-	| parts s m |
+	| parts s |
 	super initialize.
 	self removeAllMorphs.
 

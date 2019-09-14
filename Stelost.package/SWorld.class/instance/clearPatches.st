@@ -1,0 +1,3 @@
+accessing
+clearPatches
+	self subclassResponsibility.

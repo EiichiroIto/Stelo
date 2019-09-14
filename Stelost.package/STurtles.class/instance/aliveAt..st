@@ -1,3 +1,3 @@
 accessing variable
 aliveAt: index
-	^ self var: STurtleVarId aliveVarNo at: index
+	^ self flag: STurtleVarId aliveFlagNo at: index

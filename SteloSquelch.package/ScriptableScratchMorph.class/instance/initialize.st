@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	objName := self nextInstanceName.
+	objName := self instanceName.
 	blocksBin := ScratchScriptsMorph new.

@@ -1,5 +1,5 @@
 tests-accessing
 testPatches
 	| w |
-	w := SMicroWorld new.
+	w := self newWorld.
 	self assert: w patches class equals: SPatches.

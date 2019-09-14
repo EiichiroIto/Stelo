@@ -1,3 +1,3 @@
 accessing variable
 penDownAt: anInteger
-	^ self var: STurtleVarId penDownVarNo at: anInteger
+	^ self flag: STurtleVarId penDownFlagNo at: anInteger

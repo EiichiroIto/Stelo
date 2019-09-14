@@ -1,3 +1,3 @@
 private
 reservedVarNames
-	^ #(width height turtlesCount)
+	^ #(width height turtlesCount ticks)

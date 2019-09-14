@@ -1,3 +1,3 @@
-arg generator
+private
 falseString
 	^ false

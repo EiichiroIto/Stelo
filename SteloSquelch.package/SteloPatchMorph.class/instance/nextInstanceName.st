@@ -1,3 +1,0 @@
-private
-nextInstanceName
-	^ 'Patch' localized

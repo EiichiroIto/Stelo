@@ -1,0 +1,3 @@
+stelo
+defaultSWorldMode
+	^ #SMicroWorld

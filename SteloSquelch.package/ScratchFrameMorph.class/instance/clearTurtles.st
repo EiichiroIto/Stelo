@@ -1,4 +1,4 @@
 menu/button actions
 clearTurtles
-	workPane microworld turtleBreedsDo: [ :each | each clear ].
+	workPane sworld clearTurtles.
 	workPane changed.

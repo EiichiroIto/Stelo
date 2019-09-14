@@ -1,5 +1,3 @@
 color ops
-setColor: aMorph
-	| c |
-	c := [ aMorph blockArgs first argString: parser ].
-	bcGenerator setColorTo: c.
+setColor: color
+	bcGenerator setColorTo: [ color argString: parser ].

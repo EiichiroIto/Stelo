@@ -1,3 +1,3 @@
 private
 errorOccuered
-	isTerminated := true.
+	self stopAll.

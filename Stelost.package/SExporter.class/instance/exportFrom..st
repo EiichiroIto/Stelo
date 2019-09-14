@@ -5,7 +5,7 @@ exportFrom: aStageMorph
 	events := aStageMorph setupEvents.
 	title := frame ifNil: [ '' ] ifNotNil: [ frame projectName ].
 	stream := WriteStream on: ''.
-	self writeHeader.
+	self writeHeader: aStageMorph.
 	self writeSprites: { aStageMorph }, aStageMorph sprites.
-	self writeFooter.
+	self writeFooter: aStageMorph.
 	^ stream contents

@@ -1,4 +1,4 @@
 accessing
-execute: aCollection
-	self codes: aCollection.
+execute: anInteger
+	self pc: anInteger.
 	[ self doOneCycle ] whileTrue.

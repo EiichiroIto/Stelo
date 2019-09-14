@@ -1,4 +1,4 @@
 menu/button actions
 clearGraphics
-	workPane microworld patches clear.
+	workPane sworld clearPatches.
 	workPane changed.

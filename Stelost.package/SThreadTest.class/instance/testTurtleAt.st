@@ -1,13 +1,13 @@
 tests-turtle ops
 testTurtleAt
-	| w t ret |
-	w := SMicroWorld new.
-	t := SThread microworld: w.
+	| w t ret pno |
+	w := self newWorld.
+	t := SThread sworld: w.
 	w create: 3 turtles: 2.
 	t forBreedNo: 3 index: 0.
 	self assert: t stack size equals: 0.
-	t push: 0.
-	t push: 0.
+	pno := w patches indexAtX: 0 y: 0.
+	t push: pno.
 	t push: 3.
 	t turtleAt.
 	ret := t pop.
@@ -15,8 +15,8 @@ testTurtleAt
 	self assert: t stack size equals: 0.
 	t forBreedNo: 3 index: 1.
 	self assert: t stack size equals: 0.
-	t push: 0.
-	t push: 0.
+	pno := w patches indexAtX: 0 y: 0.
+	t push: pno.
 	t push: 3.
 	t turtleAt.
 	ret := t pop.
@@ -24,8 +24,8 @@ testTurtleAt
 	self assert: t stack size equals: 0.
 	t forBreedNo: 3 index: 2.
 	self assert: t stack size equals: 0.
-	t push: 0.
-	t push: 0.
+	pno := w patches indexAtX: 0 y: 0.
+	t push: pno.
 	t push: 3.
 	t turtleAt.
 	ret := t pop.

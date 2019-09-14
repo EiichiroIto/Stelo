@@ -5,6 +5,6 @@ setStageSize
 	ret isEmpty
 		ifTrue: [ ^ self ].
 	ret := ret asNumberNoError.
-	ret < workPane microworld extent x
+	ret < workPane sworld extent x
 		ifTrue: [ ^ DialogBoxMorph inform: 'Invalid Number' ].
 	stageRecorder extent: ret @ ret.

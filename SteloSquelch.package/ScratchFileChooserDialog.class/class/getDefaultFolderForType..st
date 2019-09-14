@@ -2,7 +2,7 @@ accessing
 getDefaultFolderForType: type
 
 	| mediaDir |
-	(type = #project) ifTrue: [^ self userScratchProjectsDir].
+	(#(project export) includes: type) ifTrue: [^ self userScratchProjectsDir].
 
 	(FileSystem workingDirectory / 'Media') isDirectory ifTrue: [
 		mediaDir := FileSystem workingDirectory / 'Media'.

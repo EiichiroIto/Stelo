@@ -1,3 +1,3 @@
 tests-private
 testReservedNo
-	self assert: STurtleVarId reservedNo equals: 6.
+	self assert: STurtleVarId reservedNo equals: 5.

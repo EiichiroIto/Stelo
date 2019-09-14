@@ -1,3 +1,0 @@
-other
-helpScreenName
-	^ self eventName

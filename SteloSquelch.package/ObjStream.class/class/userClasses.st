@@ -22,7 +22,7 @@ userClasses
 
 		"(120		SBreed)"
 		(121		SPatches)
-		(122		SMicroWorld)
+		"(122		SMicroWorld)"
 		(123		SVariables)
 		(124		SVarId)
 		(125		SteloStageMorph)
@@ -34,6 +34,8 @@ userClasses
 		(131 	SPatchVarId)
 		(132 	STurtleVarId)
 		(133 	STurtles)
+		(134 	SObserver)
+		(135 	SObserverVarId)
 
 		(140		ChoiceArgMorph)
 		(141		ColorArgMorph)
@@ -54,7 +56,7 @@ userClasses
 		"(156	ParameterMorph)"
 		(157		SetterBlockMorph)
 		(158		EventHatMorph)
-		"(159	EventArgMorph)"
+		(159		SubHatMorph)
 		(160		VariableBlockMorph)
 		"(161		IACTHatBlock)"
 		"(162		ImageMedia)"

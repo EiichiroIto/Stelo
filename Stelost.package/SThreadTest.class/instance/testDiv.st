@@ -1,7 +1,7 @@
 tests-arithmetic ops
 testDiv
 	| t |
-	t := SThread microworld: SMicroWorld new.
+	t := SThread sworld: SMicroWorld new.
 	t push: 10.
 	t push: 5.
 	self assert: t stack size equals: 2.
@@ -14,3 +14,8 @@ testDiv
 	t div.
 	self assert: t stack size equals: 1.
 	self assert: t pop equals: -0.5.
+	self deny: t isTerminated.
+	t push: 5.
+	t push: 0.
+	t div.
+	self assert: t isTerminated.

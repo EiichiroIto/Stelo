@@ -1,8 +1,9 @@
 tests-color ops
 testScaleValueColorFromTo
 	| w v b t |
-	w := SMicroWorld new.
-	w createPatchOrder: 4.
+	w := self newWorld.
+	w addBreed: (SObserver new sworld: w).
+	w createPatch: 4.
 	v := w patches addVariable: 'a'.
 	b := SBytecodeGenerator new.
 	b
@@ -21,9 +22,10 @@ testScaleValueColorFromTo
 	w patches var: v at: 9 put: 8.
 	w patches var: v at: 10 put: 9.
 	w patches var: v at: 11 put: 10.
-	t := SThread microworld: w.
+	t := SThread sworld: w.
 	t forObserver.
-	t execute: b code.
+	t codes: b code.
+	t execute: 1.
 	self
 		assert: (w patches var: SPatchVarId colorVarNo at: 1)
 		equals: SColorList black.

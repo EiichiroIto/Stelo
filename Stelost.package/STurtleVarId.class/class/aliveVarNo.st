@@ -1,3 +1,0 @@
-accessing
-aliveVarNo
-	^ 2

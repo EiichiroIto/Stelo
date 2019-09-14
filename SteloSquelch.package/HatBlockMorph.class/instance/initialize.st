@@ -9,6 +9,5 @@ initialize
 	scriptNameMorph := StringMorph new
 		contents: 'script';
 		font: (ScratchFrameMorph getFont: #Label);
-		forceUnicodeRendering: true;
 		color: Color white.
 	self addMorph: scriptNameMorph.

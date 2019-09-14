@@ -1,5 +1,4 @@
 transitions
 afterSingle
-	world raisedEvents notEmpty
-		ifTrue: [ self singleCont ]
-		ifFalse: [ self stop ]
+	runningEvents isEmpty
+		ifTrue: [ self stop ]

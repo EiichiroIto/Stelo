@@ -8,7 +8,6 @@ initialize
 
 	labelMorph := StringMorph new
 		font: (ScratchFrameMorph getFont: #Arg);
-		forceUnicodeRendering: true;
 		color: Color white.
 	self addMorph: labelMorph.
 	((labelMorph extent y) > 15)

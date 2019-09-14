@@ -9,8 +9,7 @@ updateThumbnails
 	fList size > 0 ifTrue: [
 		n := 0.
 		('Updating thumbnails' localized, ScratchTranslator ellipsesSuffix)
-			displayProgressAt: Display center
-			from: 0 to: fList size
+			displayProgressFrom: 0 to: fList size
 			during: [:bar |
 				fList do: [:fn |
 					bar value: n.

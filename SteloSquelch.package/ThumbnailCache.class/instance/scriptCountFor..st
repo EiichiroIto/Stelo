@@ -3,7 +3,7 @@ scriptCountFor: aSprite
 	"Answer the number of scripts in the given sprite. The scripts are in tuple form. A script must start with a hat block."
 
 	| hats count stack |
-	hats := #(EventHatMorph ).
+	hats := #(EventHatMorph SubHatMorph ).
 	count := 0.
 	aSprite blocksBin do: [:pair |
 		stack := pair at: 2.

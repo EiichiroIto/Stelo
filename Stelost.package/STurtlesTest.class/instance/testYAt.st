@@ -1,7 +1,7 @@
 tests-accessing variable
 testYAt
 	| ts |
-	ts := STurtles new breedId: SBreedId turtleBreedNo.
+	ts := STurtles new breedNo: SBreedId turtleBreedNo.
 	ts clear.
 	ts create: 2.
 	self assert: (ts yAt: 1) equals: 0.

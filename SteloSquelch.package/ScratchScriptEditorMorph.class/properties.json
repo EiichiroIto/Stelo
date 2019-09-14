@@ -9,7 +9,8 @@
 		"nameMorph",
 		"pageViewerMorph",
 		"currentCategory",
-		"tabPaneMorph"
+		"tabPaneMorph",
+		"readoutMorphs"
 	],
 	"name" : "ScratchScriptEditorMorph",
 	"type" : "normal"

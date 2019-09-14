@@ -1,3 +1,3 @@
 variables
 turtleVarNamesMenu
-	^ self stageMorph microworld turtleVarNames
+	^ self stageMorph sworld turtleVarNames

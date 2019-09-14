@@ -2,4 +2,5 @@ tests-accessing
 testBreedsOf
 	| w |
 	w := SMicroWorld new.
-	self assert: (w breedsOf: 3) class equals: STurtles.
+	w addBreed: (STurtles new breedNo: 3).
+	self assert: (w breedOf: 3) class equals: STurtles.

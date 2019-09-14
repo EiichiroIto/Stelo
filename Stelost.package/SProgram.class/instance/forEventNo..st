@@ -1,3 +1,3 @@
 accessing
 forEventNo: anInteger
-	^ eventCodes at: anInteger ifAbsentPut: [ SEventCodes new ]
+	^ entryPoints at: anInteger ifAbsentPut: [ SEntryPoints new ]

@@ -1,3 +1,0 @@
-private
-writeFooter
-	stream nextPutAll: ']}'.

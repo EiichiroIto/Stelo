@@ -1,3 +1,0 @@
-private
-writeFooter
-	self subclassResponsibility

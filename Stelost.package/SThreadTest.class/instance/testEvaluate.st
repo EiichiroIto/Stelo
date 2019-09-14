@@ -1,11 +1,12 @@
 tests-accessing
 testEvaluate
 	| w t c x |
-	w := SMicroWorld new.
-	t := SThread microworld: w.
+	w := self newWorld.
+	t := SThread sworld: w.
 	w create: 3 turtles: 1.
-	w var: SVarId colorVarNo breedNo: 3 at: 1 put: SColorList black.
-	c := #(1 2 #plus).
+	w var: SVarId colorVarNo breed: 3 at: 1 put: SColorList black.
+	c := #(push1 pushShort 2 0 #plus #stop).
 	t forBreedNo: 3 index: 1.
-	x := t evaluate: c.
+	t codes: c.
+	x := t evaluate: 1.
 	self assert: x equals: 3.

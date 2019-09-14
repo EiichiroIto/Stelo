@@ -1,3 +1,0 @@
-*SteloSquelch
-forceUnicodeRendering
-	^ false

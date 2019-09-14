@@ -1,3 +1,3 @@
 tests-initialization
 testInitialize
-	self testPrivEventCodes.
+	self testPrivEntryPoints.

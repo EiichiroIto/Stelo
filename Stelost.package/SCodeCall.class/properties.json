@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SCode",
+	"category" : "Stelost-Bytecode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"subName",
+		"address"
+	],
+	"name" : "SCodeCall",
+	"type" : "normal"
+}

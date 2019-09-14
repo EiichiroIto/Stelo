@@ -1,3 +1,5 @@
 tests-accessing
 testReservedVarNames
-	self assertCollection: SObserverVarId reservedVarNames equals: #(width height turtlesCount)
+	self
+		assertCollection: SObserverVarId reservedVarNames
+		equals: #(width height turtlesCount ticks)

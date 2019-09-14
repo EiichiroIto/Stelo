@@ -16,8 +16,8 @@ testResolveJumpAddressUsing
 	self assert: (fp at: 4) address equals: nil.
 	self assert: (fp at: 9) address equals: nil.
 
-	arr := b labelArrayFor: fp.
-	b resolveJumpAddress: fp using: arr.
+	arr := b labelsAndJumpsFor: fp.
+	b resolveJumpAddress: arr second using: arr first.
 
-	self assert: (fp at: 4) address equals: 6.
-	self assert: (fp at: 9) address equals: 5.
+	self assert: (fp at: 4) address equals: 10.
+	self assert: (fp at: 9) address equals: 9.

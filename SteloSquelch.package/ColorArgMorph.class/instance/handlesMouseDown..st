@@ -1,4 +1,4 @@
 event handling
 handlesMouseDown: evt
 
-	^ evt hand toolType isNil
+	^ true "evt hand toolType isNil"

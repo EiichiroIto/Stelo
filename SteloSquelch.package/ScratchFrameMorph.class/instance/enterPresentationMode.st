@@ -22,7 +22,7 @@ enterPresentationMode
 	"Display fullscreen: true."
 	World restoreDisplay.
 	Display fillBlack.
-	World assuredCanvas.  "re-allocate canvas after entering full-screen mode"
+	"World assuredCanvas."  "re-allocate canvas after entering full-screen mode"
 
 	"((Display width >= 965) & (Display height >= 750))
 		ifTrue: [presenter beDoubleSize]."
@@ -34,6 +34,6 @@ enterPresentationMode
 	"self updatePenPositions."
 	self updateViewModeButtons.
 
-	World assuredCanvas.  "re-allocate canvas after entering full-screen mode"
+	"World assuredCanvas."  "re-allocate canvas after entering full-screen mode"
 	World fullRepaintNeeded.
 	World displayWorldSafely.

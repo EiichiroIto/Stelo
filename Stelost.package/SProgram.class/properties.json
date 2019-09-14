@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"eventCodes"
+		"codes",
+		"entryPoints"
 	],
 	"name" : "SProgram",
 	"type" : "normal"

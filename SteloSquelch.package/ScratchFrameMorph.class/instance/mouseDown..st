@@ -1,8 +1,9 @@
 event handling
 mouseDown: evt
-	"Revert to normal cursor."
-
-	evt hand toolType: nil.
-
-	(evt cursorPoint y - self top) < topPane height ifTrue: [
-		fillScreenFlag ifFalse: [evt hand grabMorph: self]].
+	(logoMorph bounds containsPoint: evt cursorPoint)
+		ifFalse: [ ^ self ].
+	fillScreenFlag
+		ifTrue: [ ^ self ].
+	evt yellowButtonPressed
+		ifTrue: [ ^ evt hand grabMorph: self ].
+	self comeToFront.

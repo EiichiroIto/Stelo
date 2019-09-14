@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SBreed",
+	"category" : "Stelost-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sworld",
+		"breedId",
+		"ticks"
+	],
+	"name" : "SObserver",
+	"type" : "normal"
+}

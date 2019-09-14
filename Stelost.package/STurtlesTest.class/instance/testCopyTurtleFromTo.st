@@ -1,7 +1,7 @@
 tests-accessing
 testCopyTurtleFromTo
 	| ts |
-	ts := STurtles new breedId: SBreedId turtleBreedNo.
+	ts := STurtles new breedNo: SBreedId turtleBreedNo.
 	ts create: 2.
 	ts xAt: 1 put: 2.
 	ts yAt: 1 put: 3.

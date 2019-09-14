@@ -1,6 +1,5 @@
 variable ops
-getVar: aMorph
+getVar: var
 	| v |
-	aMorph ifNil: [ ^ self ].
-	v := targetMorph varId varNoFor: aMorph variable.
-	^ bcGenerator getVar: v
+	v := var variable.
+	^ bcGenerator getVar: (targetMorph varId varNoFor: v)

@@ -11,6 +11,7 @@ updateLabel
 		morph = #mouse ifTrue: [s := 'mouse-pointer' localized]].
 
 	labelMorph contents = s ifFalse: [
+		labelMorph contents: ''.
 		labelMorph contents: s.
 		labelMorph position: self position + borderWidth + (3 @ -1).
 		self extent: (labelMorph extent + (16@2) + borderWidth).

@@ -1,6 +1,3 @@
-menu/button actions
+stelo
 exportJsonCode
-	| cpp ret |
-	cpp := SJsonExporter new.
-	ret := cpp exportFrom: workPane.
-	ret inspect.
+	self export: SJsonExporter new extension: 'json'.

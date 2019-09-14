@@ -1,3 +1,3 @@
 accessing
 size
-	^ vars size
+	^ vars first size

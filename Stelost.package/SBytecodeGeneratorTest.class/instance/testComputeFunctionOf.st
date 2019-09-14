@@ -4,17 +4,20 @@ testComputeFunctionOf
 	b := SBytecodeGenerator new.
 	r := b computeFunction: #abs of: -1.
 	self assert: r isNil.
-	t := SThread microworld: SMicroWorld new.
-	self assert: (t evaluate: b code) equals: 1.
+	t := SThread sworld: SMicroWorld new.
+	t codes: b code.
+	self assert: (t evaluate: 1) equals: 1.
 
 	b := SBytecodeGenerator new.
 	r := b computeFunction: #abs of: 10.
 	self assert: r isNil.
-	t := SThread microworld: SMicroWorld new.
-	self assert: (t evaluate: b code) equals: 10.
+	t := SThread sworld: SMicroWorld new.
+	t codes: b code.
+	self assert: (t evaluate: 1) equals: 10.
 
 	b := SBytecodeGenerator new.
 	r := b computeFunction: #sqrt of: 2.
 	self assert: r isNil.
-	t := SThread microworld: SMicroWorld new.
-	self assert: (t evaluate: b code) equals: 2 sqrt.
+	t := SThread sworld: SMicroWorld new.
+	t codes: b code.
+	self assert: (t evaluate: 1) equals: 2 sqrt.

@@ -9,11 +9,8 @@ storeFieldsOn: anObjStream
 
 	self storeFieldsNamed: #(
 		objName
-		"vars"
 		blocksBin
-		"isClone"
-		"media"
-		"costume"
+		breed
 	) on: anObjStream.
 
 	oldBlockBinOwner ifNotNil: [oldBlockBinOwner addMorph: blocksBin].

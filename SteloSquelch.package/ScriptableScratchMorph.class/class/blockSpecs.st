@@ -17,23 +17,23 @@ blockSpecs
 
 	| blocks |
 	blocks := #(
+		'basic'
+			('kill %n of %m'				-	kill:breed:)
 		'control'
-			('when loop'						L	-)
+			('when loop'					L	-)
 			('when I receive %e'		E	-)
 			-
-			"('wait %n secs'					t	wait:elapsed:from: 1)
-			-"
-			('repeat %n'						c	doRepeat 10)
+			('repeat %n'					c	doRepeat 10)
 			-
-			('broadcast %e'					-	broadcast:)
-			"('broadcast %e and wait'			s	doBroadcastAndWait)"
+			('broadcast %e'				-	broadcast:)
+			('call %S'						-	callSub: '')
 			-
 			('if %b'							c	doIf)
 			('if %b'							c	doIfElse)
-			"('wait until %b'					s	doWaitUntil)"
-			('repeat until %b'				c	doUntil)
+			('repeat until %b'			c	doUntil)
 			-
-			('stop script'					-	stopThread) "doReturn"
+			('return %n'					-	return: 0)
+			('stop script'					-	stopThread)
 			('stop all'						-	stopAll)
 		'operators'
 			('%n + %n'						r	+ - -)
@@ -48,18 +48,24 @@ blockSpecs
 			('%s > %s'						b	> '' '')
 			('%n between %n and %n'	b is:between:and: 50 0 100)
 			-
-			('%b and %b'						b	&)
+			('%b and %b'					b	&)
 			('%b or %b'						b	|)
 			('not %b'							b	not)
 			-
-			('%n mod %n'						r	\\ - -)
+			('%n mod %n'					r	\\ - -)
 			('round %n'						r	rounded -)
 			('truncate %n'					r	truncated -)
 			-
 			('%f of %n'						r	computeFunction:of: 'sqrt' 10)
 		'sensing'
+			('x %n y %n'					r	patchAtX:y:	0 0)
+			-
+			('return value'				r	returnValue)
+			-
+			('turtles %m count'			r turtlesCount:)
 			('screen width'				r 	screenWidth)
 			('screen height'				r 	screenHeight)
+			('ticks'							r 	ticks)
 	).
 
 	^ blocks

@@ -1,0 +1,3 @@
+test
+testSetupBreed
+	self testCountAliveOf.

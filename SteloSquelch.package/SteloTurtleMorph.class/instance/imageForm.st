@@ -1,7 +1,8 @@
 accessing
 imageForm
 	| f c |
-	f := Form extent: 10 @ 10 depth: 32.
-	c := SColorList colorAt: self target defaultColor.
-	f fill: f boundingBox rule: Form over fillColor: c.
+	f := ScratchTheme formAt: #clearTurtlesButtonPressed ifAbsent: [ self error ].
+	f := f deepCopy.
+	c := SColorList colorAt: breed defaultColor.
+	f mapColor: Color white to: c.
 	^ f

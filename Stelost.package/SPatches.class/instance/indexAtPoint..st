@@ -1,6 +1,6 @@
 private
 indexAtPoint: aPoint
 	| r c |
-	r := aPoint x floor + (order // 2) + 1.
-	c := aPoint y floor + (order // 2) + 1.
-	^ self indexAtRow: r col: c
+	c := aPoint x floor + (order // 2) + 1.
+	r := aPoint y floor + (order // 2) + 1.
+	^ self indexAtCol: c row: r

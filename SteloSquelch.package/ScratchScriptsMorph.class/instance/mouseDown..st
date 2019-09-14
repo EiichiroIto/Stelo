@@ -4,10 +4,10 @@ mouseDown: evt
 	| m |
 	evt hand newKeyboardFocus: nil.
 
-	evt hand toolType ifNotNil: [
-		"revert to normal cursor"
+	"evt hand toolType ifNotNil: [
+		revert to normal cursor
 		evt hand toolType: nil.
-		^ self].
+		^ self]."
 
 	evt yellowButtonPressed ifTrue: [
 		Sensor waitNoButton.

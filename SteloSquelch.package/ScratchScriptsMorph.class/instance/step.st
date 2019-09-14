@@ -11,7 +11,7 @@ step
 	feedbackMorph useSquareCorners.
 
 	h := World activeHand.
-	h toolType = 'CutTool' ifTrue: [^ self showDeleteFeedback].
+	"h toolType = 'CutTool' ifTrue: [^ self showDeleteFeedback]."
 
 	(self bounds containsPoint: h position) ifFalse: [^ self].
 	h submorphCount = 1 ifFalse: [^ self].

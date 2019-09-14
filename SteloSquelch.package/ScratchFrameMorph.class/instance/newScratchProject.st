@@ -22,8 +22,8 @@ newScratchProject
 
 	sprite := workPane newPatch.
 	self addAndView: sprite.
-
 	self addNewTurtle.
+	workPane restoreBreeds.
 
 	"self initializeWatcherPositions."
 	justSaved := true.

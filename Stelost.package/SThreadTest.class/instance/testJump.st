@@ -1,7 +1,7 @@
 tests-control ops
 testJump
 	| t |
-	t := SThread microworld: SMicroWorld new.
+	t := SThread sworld: SMicroWorld new.
 	t codes: #(1 2 3).
 	self assert: t pc equals: 1.
 	t push: 5.

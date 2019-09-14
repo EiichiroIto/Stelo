@@ -1,7 +1,7 @@
 tests-accessing
 testForObserver
 	| e |
-	e := SThread microworld: SMicroWorld new.
+	e := SThread sworld: SMicroWorld new.
 	self assert: e privBreedId isNil.
 	self assert: e privId isNil.
 	e forObserver.

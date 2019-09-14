@@ -6,7 +6,7 @@ buildButtons
 		#(clearTurtles			clearTurtles			'Clear Turtles')
 		#(clearGraphics		clearGraphics			'Clear Graphics')
 		#(setup						startSetup				'Start Setup Scripts')
-		#(go							shoutGo						'Start Loop Scripts')
+		#(go							#startLoop						'Start Loop Scripts')
 		#(stop						stopAll						'Stop everything')
 	)
 		collect: [ :spec | 
@@ -21,7 +21,7 @@ buildButtons
 				actWhen: #buttonUp;
 				setBalloonText: spec third localized;
 					off.
-			#shoutGo = spec second
+			#startLoop = spec second
 				ifTrue: [ flagButton := button ].
 			button ].
 	buttons do: [ :b | self addMorph: b ].

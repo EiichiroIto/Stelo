@@ -1,5 +1,5 @@
 accessing
 putOn: aStream
 	address ifNil: [ self error ].
-	aStream nextPut: address.
+	self putShort: address on: aStream.
 	aStream nextPut: selector.

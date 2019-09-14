@@ -1,7 +1,7 @@
 event handling
 mouseDown: evt
 
-	evt hand toolType: nil.
+	"evt hand toolType: nil."
 	wasOn := isOn.
 
 	evt hand newKeyboardFocus: nil.

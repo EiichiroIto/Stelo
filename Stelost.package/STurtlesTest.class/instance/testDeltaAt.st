@@ -1,7 +1,7 @@
 tests-accessing variable
 testDeltaAt
 	| ts delta |
-	ts := STurtles new breedId: 3.
+	ts := STurtles new breedNo: 3.
 	ts create: 2.
 	ts headingAt: 1 put: 30.
 	ts headingAt: 2 put: 60.

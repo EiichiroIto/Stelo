@@ -1,7 +1,7 @@
 tests-private
 testSetupTurtleAt
 	| ts |
-	ts := STurtles new breedId: SBreedId turtleBreedNo.
+	ts := STurtles new breedNo: SBreedId turtleBreedNo.
 	ts create: 3.
 	ts setupTurtleAt: 1.
 	ts setupTurtleAt: 2.

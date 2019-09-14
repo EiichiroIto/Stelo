@@ -1,3 +1,3 @@
 accessing platform
 macModuleName
-	^ 'test1.so'
+	^ 'stelo.so'

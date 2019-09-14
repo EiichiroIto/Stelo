@@ -1,4 +1,4 @@
 accessing
 isStop
 
-	^ (selector = #stopThread) | (selector = #stopAll)
+	^ (selector = #stopThread) | (selector = #stopAll) | (selector = #return:)

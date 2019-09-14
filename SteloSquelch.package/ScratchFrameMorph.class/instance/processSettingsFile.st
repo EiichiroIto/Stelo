@@ -5,13 +5,18 @@ processSettingsFile
 	| lang settings k |
 	self class setVisibleDrives: nil.
 	lang := nil.
-	ScratchFileChooserDialog clearFolderCache. "clear homeDir and last folder cache"
+	ScratchFileChooserDialog clearFolderCache.	
 	settings := self readSettingsFile.
-	settings associationsDo: [:assoc |
-		k := assoc key.
-		k = 'language' ifTrue: [lang := assoc value].
-		k = 'home' ifTrue: [ScratchFileChooserDialog setHomeDir: assoc value].
-		k = 'visibledrives' ifTrue: [self class setVisibleDrives: assoc value]].
-
-	lang ifNil: [lang := ScratchTranslator guessLanguage].
-	self setLanguage: lang.
+	settings
+		associationsDo: [ :assoc | 
+			k := assoc key.
+			k = 'language'
+				ifTrue: [ lang := assoc value ].
+			k = 'home'
+				ifTrue: [ ScratchFileChooserDialog setHomeDir: assoc value ].
+			k = 'useplugin'
+				ifTrue: [ sworldMode := #SPluginWorld ].
+			k = 'visibledrives'
+				ifTrue: [ self class setVisibleDrives: assoc value ] ].
+	lang ifNil: [ lang := ScratchTranslator guessLanguage ].
+	self setLanguage: lang

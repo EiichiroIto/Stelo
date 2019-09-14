@@ -1,6 +1,6 @@
 private
 updateCache
 	forceModelChanged := false.
-	modelExtent := microworld extent.
+	modelExtent := sworld extent.
 	cell := self extent // modelExtent.
 	offset := (self extent - (modelExtent * cell)) // 2.

@@ -1,3 +1,3 @@
 variables
 patchVarId
-	^ microworld patches varId
+	^ self patches varId

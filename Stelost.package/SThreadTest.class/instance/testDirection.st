@@ -1,7 +1,7 @@
 tests-misc ops
 testDirection
 	| t |
-	t := SThread microworld: SMicroWorld new.
+	t := SThread sworld: SMicroWorld new.
 	t forPatchId: 1.
 	t push: 0.
 	t push: 0.

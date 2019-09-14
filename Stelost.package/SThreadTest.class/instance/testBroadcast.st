@@ -1,8 +1,8 @@
-tests-world instructions
+tests-control ops
 testBroadcast
 	| w e s |
 	w := SMicroWorld new.
-	e := SThread microworld: w.
+	e := SThread sworld: w.
 	s := e stack size.
 	e push: 10.
 	self assert: w raisedEvents isEmpty.

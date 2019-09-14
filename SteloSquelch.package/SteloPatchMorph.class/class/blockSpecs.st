@@ -17,20 +17,22 @@ blockSpecs
 
 	| blocks |
 	blocks := #(
-		'basic'
-			('kill %n of %m'					-	kill:breed:)
 		'sensing'
 			('id'									r	getId)
 			('x position'						r	getXpos)
 			('y position'						r	getYpos)
-			('one of %m at x %n y %n'				r	turtle:x:y: '')
-			('distance to x %n y %n'	r	distanceToX:y: 0 0)
-			('direction to x %n y %n'	r	directionToX:y: 0 0)
+			('one of %m at %n'				r	turtle:at: '' 'where')
+			('distance to %n'				r	distanceTo: 'where')
+			('direction to %n'				r	directionTo: 'where')
+			-
+			('here'								r	here)
+			('x %n y %n from here'	r	relativeToX:y:		0 0)
+			('r %n theta %n from here'	r	relativeToR:theta:		0 0)
 		'control'
 			('when setup'						S	-)
 		'patch'
-			('patch color at x %n y %n' 			r 	getPatchColorX:y: 0 0)
-			('set patch color at x %n y %n to %c'			- setPatchColorX:y:to: 0 0 15)
+			('patch color at %n' 			r 	getPatchColorAt: 'where')
+			('set patch color at %n to %c'			- setPatchColorAt:to: 'where' 15)
 	).
 
 	^ blocks, self colorBlocks, super blockSpecs

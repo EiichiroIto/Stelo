@@ -1,8 +1,8 @@
 tests-misc ops
 testNsumVarTo
 	| w v1 v2 b t |
-	w := SMicroWorld new.
-	w createPatchOrder: 4.
+	w := self newWorld.
+	w createPatch: 4.
 	v1 := w patches addVariable: 'a'.
 	v2 := w patches addVariable: 'b'.
 	b := SBytecodeGenerator new.
@@ -17,9 +17,10 @@ testNsumVarTo
 	w patches var: v1 at: 7 put: 1.
 	w patches var: v1 at: 10 put: 2.
 	w patches var: v1 at: 16 put: 3.
-	t := SThread microworld: w.
+	t := SThread sworld: w.
 	t forObserver.
-	t execute: b code.
+	t codes: b code.
+	t execute: 1.
 	self
 		assertCollection: (w patches privVariables arrayOfVarNo: v2)
 		equals: #(4 1 5 4 3 4 3 1 5 1 6 4 6 3 6 0) asFloatArray

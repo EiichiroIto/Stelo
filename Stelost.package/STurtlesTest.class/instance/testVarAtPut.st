@@ -1,7 +1,7 @@
 tests-accessing variable
 testVarAtPut
 	| ts |
-	ts := STurtles new breedId: SBreedId turtleBreedNo.
+	ts := STurtles new breedNo: SBreedId turtleBreedNo.
 	ts clear.
 	ts create: 2.
 	ts var: STurtleVarId xVarNo at: 1 put: 2.

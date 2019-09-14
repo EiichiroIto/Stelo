@@ -6,15 +6,19 @@
 		"cachedSymbols"
 	],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"OpTable"
+	],
 	"instvars" : [
 		"world",
 		"stack",
 		"pc",
 		"codes",
 		"id",
+		"breedId",
+		"isRunning",
 		"isTerminated",
-		"breedId"
+		"retVal"
 	],
 	"name" : "SThread",
 	"type" : "normal"

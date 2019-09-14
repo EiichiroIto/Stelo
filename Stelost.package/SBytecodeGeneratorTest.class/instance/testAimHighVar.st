@@ -2,7 +2,9 @@ tests-turtle  ops
 testAimHighVar
 	| w v ret b t |
 	w := SMicroWorld new.
-	w createPatchOrder: 5.
+	w addBreed: SPatches new.
+	w addBreed: (STurtles new breedNo: 3).
+	w createPatch: 5.
 	w create: 3 turtles: 1.
 	v := w patches addVariable: 'a'.
 	"
@@ -16,27 +18,28 @@ testAimHighVar
 	w y: 3 at: 1 put: 0.
 	w
 		var: STurtleVarId headingVarNo
-		breedNo: 3
+		breed: 3
 		at: 1
 		put: 45.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 18
 		put: 1.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 19
 		put: 2.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 14
 		put: 3.
 	b := SBytecodeGenerator new.
 	b aimHighVar: v.
-	t := SThread microworld: w.
+	t := SThread sworld: w.
 	t forBreedNo: 3 index: 1.
-	ret := t evaluate: b code.
+	t codes: b code.
+	ret := t evaluate: 1.
 	self assert: ret equals: -45

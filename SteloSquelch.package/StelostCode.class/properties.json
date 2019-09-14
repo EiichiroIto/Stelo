@@ -4,7 +4,9 @@
 	"category" : "SteloSquelch-CodeGenerator",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"UsedCommands"
+	],
 	"instvars" : [
 		"targetMorph",
 		"bcGenerator",

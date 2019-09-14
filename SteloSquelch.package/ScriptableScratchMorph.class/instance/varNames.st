@@ -1,3 +1,3 @@
 variables
 varNames
-	^ self target userDefinedVarNames
+	^ breed userDefinedVarNames

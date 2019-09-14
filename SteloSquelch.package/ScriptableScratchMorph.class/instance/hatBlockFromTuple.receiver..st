@@ -24,4 +24,9 @@ hatBlockFromTuple: tuple receiver: scriptOwner
 					^ block ].
 			block eventName: eventName.
 			^ block ].
-	^ block.
+	blockClass = SubHatMorph
+		ifTrue: [ block
+				subName: (tuple at: 2);
+				scriptOwner: scriptOwner.
+			^ block ].
+	^ block

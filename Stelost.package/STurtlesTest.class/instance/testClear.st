@@ -1,8 +1,8 @@
 tests-accessing
 testClear
 	| ts |
-	ts := STurtles new breedId: SBreedId turtleBreedNo.
+	ts := STurtles new breedNo: SBreedId turtleBreedNo.
 	ts create: 100.
-	self assert: ts count equals: 100.
+	self assert: ts countAlive equals: 100.
 	ts clear.
-	self assert: ts count equals: 0.
+	self assert: ts countAlive equals: 0.

@@ -1,4 +1,4 @@
 observer ops
 clearAll
-	world turtleBreedsDo: [ :each | each clear ].
+	world clearTurtles.
 	world patches clear.

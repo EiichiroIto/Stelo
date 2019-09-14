@@ -1,3 +1,0 @@
-accessing
-rewindBreedId
-	breedId rewind.

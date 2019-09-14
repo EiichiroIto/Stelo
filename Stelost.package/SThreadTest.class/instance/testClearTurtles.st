@@ -1,11 +1,11 @@
-tests-world instructions
+tests-observer ops
 testClearTurtles
 	| w e s |
-	w := SMicroWorld new.
+	w := self newWorld.
 	w create: 3 turtles: 10.
-	e := SThread microworld: w.
+	e := SThread sworld: w.
 	s := e stack size.
-	self assert: (w breedsOf: 3) count equals: 10.
+	self assert: (w breedOf: 3) countAlive equals: 10.
 	e clearTurtles.
-	self assert: (w breedsOf: 3) count equals: 0.
+	self assert: (w breedOf: 3) countAlive equals: 0.
 	self assert: e stack size equals: s.

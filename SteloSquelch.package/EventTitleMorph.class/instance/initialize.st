@@ -11,7 +11,6 @@ initialize
 
 	labelMorph := StringMorph new
 		font: (ScratchFrameMorph getFont: #Arg);
-		forceUnicodeRendering: true;
 		color: Color white.
 	self addMorph: labelMorph.
 	self eventName: ''.

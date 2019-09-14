@@ -1,7 +1,7 @@
 tests-misc ops
 testDec
 	| t |
-	t := SThread microworld: SMicroWorld new.
+	t := SThread sworld: SMicroWorld new.
 	t push: 10.
 	self assert: t stack first equals: 10.
 	t dec.

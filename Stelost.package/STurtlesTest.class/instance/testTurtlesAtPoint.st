@@ -1,7 +1,7 @@
 tests-command
 testTurtlesAtPoint
 	| ts list |
-	ts := STurtles new breedId: SBreedId turtleBreedNo.
+	ts := STurtles new breedNo: SBreedId turtleBreedNo.
 	ts create: 5.
 	list := ts turtlesAtPoint: 0 @ 0.
 	self assertCollection: list asArray equals: #(1 2 3 4 5).

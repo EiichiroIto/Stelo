@@ -1,3 +1,3 @@
 variables
 patchVarNamesMenu
-	^ microworld patches userDefinedVarNames
+	^ self patches userDefinedVarNames

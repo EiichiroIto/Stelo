@@ -37,7 +37,9 @@
 		"lastViewMode",
 		"viewModeButtonsPanel",
 		"stageRecorder",
-		"serverAddress"
+		"serverAddress",
+		"sworldMode",
+		"stepTime"
 	],
 	"name" : "ScratchFrameMorph",
 	"type" : "normal"

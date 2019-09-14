@@ -1,8 +1,8 @@
 tests-command
 testAimHighPatchVarBreedId
 	| w v ret |
-	w := SMicroWorld new.
-	w createPatchOrder: 5.
+	w := self newWorld.
+	w createPatch: 5.
 	w create: 3 turtles: 1.
 	v := w patches addVariable: 'a'.
 	"
@@ -16,56 +16,56 @@ testAimHighPatchVarBreedId
 	w y: 3 at: 1 put: 0.
 	w
 		var: STurtleVarId headingVarNo
-		breedNo: 3
+		breed: 3
 		at: 1
 		put: 45.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 18
 		put: 1.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 19
 		put: 2.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 14
 		put: 3.
 	ret := w aimHighPatchVar: v breed: 3 id: 1.
 	self assert: ret equals: -45.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 18
 		put: 4.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 19
 		put: 3.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 14
 		put: 2.
 	ret := w aimHighPatchVar: v breed: 3 id: 1.
 	self assert: ret equals: 45.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 18
 		put: 4.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 19
 		put: 5.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 14
 		put: 2.
 	ret := w aimHighPatchVar: v breed: 3 id: 1.
@@ -80,32 +80,32 @@ testAimHighPatchVarBreedId
 "
 	w
 		var: STurtleVarId headingVarNo
-		breedNo: 3
+		breed: 3
 		at: 1
 		put: 90.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 16
 		put: 1.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 17
 		put: 1.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 18
 		put: 2.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 19
 		put: 3.
 	w
 		var: v
-		breedNo: 2
+		breed: 2
 		at: 20
 		put: 3.
 	ret := w aimHighPatchVar: v breed: 3 id: 1.

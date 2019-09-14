@@ -1,3 +1,0 @@
-accessing
-penDownVarNo
-	^ 6

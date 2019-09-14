@@ -1,7 +1,7 @@
 tests-arithmetic ops
 testAcos
 	| t |
-	t := SThread microworld: SMicroWorld new.
+	t := SThread sworld: SMicroWorld new.
 	t push: 0.5.
 	self assert: t stack size equals: 1.
 	t acos.

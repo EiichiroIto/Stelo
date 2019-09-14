@@ -3,3 +3,4 @@ initialize
 	super initialize.
 	stream := WriteStream on: Array new.
 	labelId := SteloId new.
+	address := 1.

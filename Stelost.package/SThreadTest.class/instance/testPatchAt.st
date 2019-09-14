@@ -1,9 +1,9 @@
 tests-turtle ops
 testPatchAt
 	| w t |
-	w := SMicroWorld new.
-	t := SThread microworld: w.
-	w createPatchOrder: 4.
+	w := self newWorld.
+	t := SThread sworld: w.
+	w createPatch: 4.
 	t push: 0.
 	t push: 0.
 	t patchAt.

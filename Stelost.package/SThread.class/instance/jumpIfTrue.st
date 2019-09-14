@@ -3,5 +3,5 @@ jumpIfTrue
 	| address cond |
 	address := self pop.
 	cond := self pop.
-	cond
-		ifTrue: [ pc := address ].
+	cond = 0
+		ifFalse: [ pc := address ].

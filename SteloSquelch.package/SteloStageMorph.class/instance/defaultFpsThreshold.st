@@ -1,0 +1,3 @@
+private
+defaultFpsThreshold
+	^ 50

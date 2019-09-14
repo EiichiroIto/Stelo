@@ -4,5 +4,5 @@ getBreedVar
 	bno := self pop.
 	var := self pop.
 	index := self pop.
-	ret := world var: var breedNo: bno at: index.
+	ret := world var: var breed: bno at: index.
 	self push: ret.

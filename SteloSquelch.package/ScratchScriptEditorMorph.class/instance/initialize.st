@@ -18,7 +18,7 @@ initialize
 	self addMorph: (pageViewerMorph position: (self left @ (self top + topSectionHeight))).
 
 	"rotationButtons := #()."
-	"readoutMorphs := #()."
+	readoutMorphs := #().
 	self target: nil.
 	"thumbnailMorph extent: 50@50."
 	self extent: 300@400.

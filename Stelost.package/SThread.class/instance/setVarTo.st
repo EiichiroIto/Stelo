@@ -5,6 +5,6 @@ setVarTo
 	var := self pop.
 	world
 		var: var
-		breedNo: breedId
+		breed: breedId
 		at: id
 		put: val

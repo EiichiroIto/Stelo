@@ -1,12 +1,11 @@
-execution
+private
 doOneCycle
 	| code |
+	isRunning := true.
 	[ pc > codes size
-		ifTrue: [ ^ false ].
+		ifTrue: [ ^ self error ].
 	code := codes at: pc.
-	code = #yield
-		ifTrue: [ ^ true ].
 	pc := pc + 1.
-	code isSymbol
-		ifTrue: [ self perform: code ]
-		ifFalse: [ self push: code ] ] repeat.
+	self perform: code.
+	isRunning ] whileTrue.
+	^ false

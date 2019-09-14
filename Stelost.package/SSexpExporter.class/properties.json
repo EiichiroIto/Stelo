@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SExporter",
+	"category" : "Stelost-Bytecode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SSexpExporter",
+	"type" : "normal"
+}

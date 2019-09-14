@@ -1,3 +1,3 @@
 private
 modelChanged
-	^ forceModelChanged or: [ modelExtent ~= microworld extent ]
+	^ forceModelChanged or: [ modelExtent ~= sworld extent ]

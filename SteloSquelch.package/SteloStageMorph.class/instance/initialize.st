@@ -1,8 +1,10 @@
 initialization
 initialize
-
+	breed := SObserver new.
 	super initialize.
 	sprites := OrderedCollection new.
-	objName := 'Observer' localized.
 	updateDisplay := true.
-	self setupMicroworld.
+	lastMSec := nil.
+	lastTicks := 0.
+	fpsCount := 0.
+	self setupDisplay.

@@ -1,7 +1,7 @@
 tests-private
 testPrivBreedId
 	| e |
-	e := SThread microworld: SMicroWorld new.
+	e := SThread sworld: SMicroWorld new.
 	self assert: e privBreedId isNil.
 	e privBreedId: 10.
 	self assert: e privBreedId equals: 10.

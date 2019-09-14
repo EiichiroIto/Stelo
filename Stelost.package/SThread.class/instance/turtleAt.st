@@ -1,8 +1,9 @@
 turtle ops
 turtleAt
-	| x y ret bid |
+	| x y ret bid pno |
 	bid := self pop.
-	y := self pop.
-	x := self pop.
-	ret := world turtle: bid x: x y: y exceptBreedNo: breedId index: id.
+	pno := self pop.
+	x := world patches xAt: pno.
+	y := world patches yAt: pno.
+	ret := world turtle: bid x: x y: y exceptBreed: breedId index: id.
 	self push: ret.

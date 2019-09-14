@@ -2,12 +2,12 @@ acccessing
 generateSymbols
 	"self generateSymbols inspect."
 	| w |
-	cachedSymbols := { #yield }, self symbols.
+	self setupCachedSymbols.
 	w := WriteStream on: ''.
 	w
 		nextPutAll: 'enum SteloSymbol {';
 		nextPutAll: String lf;
-		nextPutAll: '  SS_nop = 0,';
+		nextPutAll: '  SS_nop = -1,';
 		nextPutAll: String lf.
 	cachedSymbols
 		withIndexDo: [ :each :index | 
@@ -16,7 +16,7 @@ generateSymbols
 				nextPutAll: each;
 				nextPutAll: ',';
 				nextPutAll: ' /* ';
-				nextPutAll: index asString;
+				nextPutAll: (index - 1) asString;
 				nextPutAll: ' */';
 				nextPutAll: String lf ].
 	w

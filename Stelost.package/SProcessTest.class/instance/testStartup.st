@@ -1,7 +1,9 @@
 tests-accessing
 testStartup
-	| p |
-	p := SProcess microworld: SMicroWorld new program: SProgram new.
+	| w p |
+	w := SMicroWorld new.
+	w addBreed: (SObserver new sworld: w).
+	p := w newProcess program: SProgram new.
 	p startup.
 	self assert: p privTransition equals: #afterStartup.
 	self assertCollection: p privRunningEvents equals: {SEventId startupEventNo}.

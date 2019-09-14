@@ -1,3 +1,7 @@
 variables
 turtleVarNamesMenu
-	^ self stageMorph microworld turtleVarNames
+	| list |
+	list := OrderedCollection new.
+	self stageMorph turtleMorphs
+		do: [ :each | list addAll: each breed userDefinedVarNames ].
+	^ list

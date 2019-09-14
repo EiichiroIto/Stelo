@@ -1,8 +1,8 @@
-file read/write
+instance creation
 installNewProject: newWorkpane
 	"Called after creating or reading a new project to clear the process scheduler, pick an object to view, clear the library thumbnails, and perform other housekeeping."
 
-	| viewTarget sb |
+	| viewTarget |
 	self stopAll.
 
 	newWorkpane class = SteloStageMorph
@@ -16,6 +16,7 @@ installNewProject: newWorkpane
 
 	newWorkpane isQuarterSize: workPane isQuarterSize.
 	newWorkpane bounds: workPane bounds.
+	newWorkpane sworld: self newSWorld.
 	"newWorkpane midiPortNum: workPane midiPortNum.
 	workPane closeMIDI."
 
@@ -36,11 +37,11 @@ installNewProject: newWorkpane
 	"fix sprite positions (backward compatability)"
 	workPane submorphs do: [:m |
 		"(m isKindOf: WatcherMorph) ifTrue: [m convertFromOldWatcher]."
-		(m respondsTo: #costume) ifTrue: [
-			m position: m position + m costume rotationCenter]. "fix up positions"
+		"(m respondsTo: #costume) ifTrue: [
+			m position: m position + m costume rotationCenter]. fix up positions"
 		m layoutChanged].
 	workPane layoutChanged.
-	workPane microworld fixVars.
+	workPane fixVars.
 
 	"reset timer"
 	"ScriptableScratchMorph resetTimer."
@@ -68,11 +69,11 @@ installNewProject: newWorkpane
 		self enableRemoteSensors].
 	(projectInfo at: 'hasMotorBlocks' ifAbsent: [false]) ifTrue: [
 		self showMotorBlocks]."
-	(projectInfo includesKey: 'penTrails') ifTrue: [
-		workPane penTrailsForm: (projectInfo at: 'penTrails')].
+	"(projectInfo includesKey: 'penTrails') ifTrue: [
+		workPane penTrailsForm: (projectInfo at: 'penTrails')]."
 
 	Clipboard := nil.
-	World cleanseStepList.  "make sure garbage collect can clean up the old sprites"
+	self currentWorld cleanseStepList.  "make sure garbage collect can clean up the old sprites"
 	Smalltalk garbageCollect.  "get rid of old sprite instances"
 
 	self world ifNotNil: [self world startSteppingSubmorphsOf: self].

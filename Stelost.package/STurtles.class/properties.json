@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"breedId",
-		"defaultColor"
+		"defaultColor",
+		"breedNo",
+		"defaultPosition"
 	],
 	"name" : "STurtles",
 	"type" : "normal"

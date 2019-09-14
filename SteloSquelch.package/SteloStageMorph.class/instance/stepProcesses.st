@@ -2,5 +2,7 @@ scratch processes/events
 stepProcesses
 	process ifNil: [ ^ self ].
 	process step.
+	self updateFps.
 	updateDisplay
-		ifTrue: [ steloDisplay changed ].
+		ifFalse: [ ^ self ].
+	steloDisplay changed

@@ -1,3 +1,3 @@
-code generator
+private
 indentLevelFor: aString 
 	^ 0

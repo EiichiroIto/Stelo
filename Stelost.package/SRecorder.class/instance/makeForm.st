@@ -1,9 +1,12 @@
 private
 makeForm
-	| form x0 x y colors index tc |
+	| form x0 x y colors index tc frame |
 	self modelChanged
 		ifTrue: [ self updateCache ].
 	form := ColorForm extent: extent depth: 32.
+	frame := AnimatedImageFrame new
+		delay: self defaultFrameDelay;
+		form: form.
 	colors := microworld colors.
 	x0 := offset x.
 	y := offset y + (cell y * (modelExtent y - 1)).
@@ -16,4 +19,4 @@ makeForm
 					index := index + 1.
 					x := x + cell x ].
 			y := y - cell y ].
-	^ form.
+	^ frame

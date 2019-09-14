@@ -7,6 +7,6 @@ setBreedVarTo
 	index := self pop.
 	world
 		var: var
-		breedNo: bno
+		breed: bno
 		at: index
 		put: val

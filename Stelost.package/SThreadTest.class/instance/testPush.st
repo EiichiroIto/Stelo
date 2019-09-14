@@ -1,7 +1,7 @@
 tests-private
 testPush
 	| e |
-	e := SThread microworld: SMicroWorld new.
+	e := SThread sworld: SMicroWorld new.
 	self assert: e stack isEmpty.
 	e push: 10.
 	e push: 20.

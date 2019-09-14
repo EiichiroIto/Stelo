@@ -1,5 +1,3 @@
-turtle  ops
-setXpos: aMorph
-	| num |
-	num := aMorph blockArgs first argString: parser.
-	bcGenerator setXpos: num.
+basic ops
+setXpos: num
+	bcGenerator setXpos: [ num argString: parser ].

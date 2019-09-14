@@ -11,7 +11,7 @@ copyRecordingIn: dict
 		(m isKindOf: HatBlockMorph) ifTrue: [m scriptOwner: newCopy].
 		(m isKindOf: CommandBlockMorph) ifTrue: [m mapReceiver: self to: newCopy]].
 	newCopy setBlocksBin: newBlocksBin.
-	newCopy objName: self nextInstanceName.
+	newCopy objName: self instanceName.
 	"newCopy setMedia: (media collect: [:el | el copy]).
 	newCopy lookLike: costume mediaName."
 	^ newCopy

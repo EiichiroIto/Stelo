@@ -3,7 +3,7 @@ initialize
 	"self initialize"
 
 	Clipboard := nil.
-	WorkpaneExtent := 480@480.
+	WorkpaneExtent := 440@440.
 	UseErrorCatcher := false. "true"
 	"DefaultNotes := ''."
 
