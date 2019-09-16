@@ -1,3 +1,6 @@
 accessing
 sizeOf: bno
-	^ plugin sizeOf: bno
+	^ (plugin
+		getFloat: SObserverVarId sizeVarNo
+		breed: SBreedId observerBreedNo
+		id: bno) truncated

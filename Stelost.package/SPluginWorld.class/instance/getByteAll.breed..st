@@ -1,7 +1,7 @@
 private
 getByteAll: vno breed: bno
 	| size ptr |
-	size := plugin sizeOf: bno.
+	size := self sizeOf: bno.
 	ptr := plugin getByteAll: vno breed: bno.
 	ptr isNull
 		ifTrue: [ ^ nil ].

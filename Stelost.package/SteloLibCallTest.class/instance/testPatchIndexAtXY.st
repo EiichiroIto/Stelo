@@ -3,8 +3,6 @@ testPatchIndexAtXY
 	| c r |
 	c := SteloLibCall new.
 	c createPatch: 10.
-	self assert: c getRows equals: 10.
-	self assert: c getCols equals: 10.
 	r := c patchIndexAtX: -5 y: -5.
 	self assert: r equals: 1.
 	r := c patchIndexAtX: -4 y: -5.

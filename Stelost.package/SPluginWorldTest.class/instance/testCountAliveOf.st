@@ -1,12 +1,12 @@
 test
 testCountAliveOf
-	| c |
-	c := SteloLibCall new.
-	self assert: (c countAliveOf: 2) equals: self defaultPatchSize.
+	| c t |
+	c := SPluginWorld new.
 	c createPatch: 10.
 	self assert: (c countAliveOf: 2) equals: 100.
 	self assert: (c countAliveOf: 3) equals: 0.
-	c setupBreed: 3.
+	t := STurtles new breedNo: 3.
+	c setupBreed: t.
 	self assert: (c countAliveOf: 3) equals: 0.
 	c create: 3 turtles: 50.
 	self assert: (c countAliveOf: 3) equals: 50.

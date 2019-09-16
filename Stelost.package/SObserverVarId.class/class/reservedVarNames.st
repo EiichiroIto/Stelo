@@ -1,3 +1,3 @@
 private
 reservedVarNames
-	^ #(width height turtlesCount ticks)
+	^ #(width height maxBreedNo ticks countAlive size maxVar)

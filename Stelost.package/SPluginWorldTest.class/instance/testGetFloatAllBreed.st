@@ -17,6 +17,3 @@ testGetFloatAllBreed
 	self assert: arr first closeTo: 10.
 	self assert: arr second closeTo: 20.
 	self assert: arr third closeTo: 0.
-	Transcript show: (SteloLibCall new getErrorMessage); cr.
-	Transcript show: (SteloLibCall new sizeOf: 3); cr.
-	Transcript show: (SteloLibCall new countAliveOf: 3); cr.

@@ -1,3 +1,6 @@
 accessing
 countAliveOf: bno
-	^ plugin countAliveOf: bno
+	^ (plugin
+		getFloat: SObserverVarId countAliveVarNo
+		breed: SBreedId observerBreedNo
+		id: bno) truncated
