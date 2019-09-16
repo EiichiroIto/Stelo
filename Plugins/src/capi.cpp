@@ -67,12 +67,7 @@ extern "C" {
   void step();
   void stop();
   bool isRunning();
-  int size(int breed);
-  int countAlive(int breed);
-  int getCols();
-  int getRows();
   u_int8_t *getScreen();
-  int maxBreedNo();
   void reset();
   void setupBreed(int bno);
   bool addVariable(int bno, const char *str, int vno);
@@ -220,37 +215,9 @@ bool isRunning()
   return process->isRunning();
 }
 
-int size(int breed)
-{
-  debug("size(%d)\n", breed);
-  return world.size(breed);
-}
-
-int countAlive(int breed)
-{
-  debug("countAlive(%d)\n", breed);
-  return world.countAlive(breed);
-}
-
-int getCols()
-{
-  return world.getCols();
-}
-
-int getRows()
-{
-  return world.getRows();
-}
-
 u_int8_t *getScreen()
 {
   return (u_int8_t*) world.getScreen();
-}
-
-int maxBreedNo()
-{
-  debug("maxBreedNo()\n");
-  return world.maxBreedNo();
 }
 
 void reset()

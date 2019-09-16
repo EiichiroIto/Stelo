@@ -174,8 +174,11 @@ SObserverVarId::SObserverVarId() : VarId()
 {
   add("width", widthVarNo);
   add("height", heightVarNo);
-  add("turtlesCount", turtlesCountVarNo);
+  add("maxBreed", maxBreedVarNo);
   add("ticks", ticksVarNo);
+  add("countAlive", countAliveVarNo);
+  add("size", sizeVarNo);
+  add("max", maxVarNo);
 }
 
 /*
@@ -1374,7 +1377,8 @@ void STurtles::create(int num)
   for (int i = 1; i <= size(); i ++) {
     if (!getAlive(i)) {
       setupTurtle(i);
-      if (-- rest == 0) {
+      rest --;
+      if (rest == 0) {
         return;
       }
     }
@@ -1386,17 +1390,18 @@ void STurtles::create(int num)
     kill(i);
   }
   debug("size=%d\n", size());
-  while (rest --) {
-    if (pos < size()) {
-      setupTurtle(pos++);
-    } else {
-      return;
-    }
+  for (int i = 0; i < rest; i ++) {
+    setupTurtle(pos++);
   }
 }
 
 void STurtles::setupTurtle(int tno)
 {
+  if (tno > size()) {
+    printf("tno=%d, size=%d\n", tno, size());
+    error("STurtles::setupTurtle invalid tno");
+    return;
+  }
   setColor(tno, _defaultColor);
   setFlag(tno, 1 << ((STurtleVarId *)_varId)->aliveFlagNo);
   setX(tno, _defaultX);
@@ -1712,6 +1717,23 @@ int SMicroWorld::getRows() const
   return ps->getRows();
 }
 
+int SMicroWorld::countAlive(int bno) const
+{
+  int count = 0;
+  if (bno == BreedId::observerBreedNo) {
+    count = 1;
+  } else if (bno == BreedId::patchBreedNo) {
+    SPatches *ps = (SPatches *)_breeds[bno-1];
+    count = ps->countAlive();
+  } else if (bno >= BreedId::turtleBreedNo) {
+    STurtles *ts = (STurtles *)_breeds[bno-1];
+    if (ts != NULL) {
+      count = ts->countAlive();
+    }
+  }
+  return count;
+}
+
 int SMicroWorld::size(int bno) const
 {
   if (bno == BreedId::observerBreedNo) {
@@ -1722,6 +1744,11 @@ int SMicroWorld::size(int bno) const
   }
   STurtles *ts = (STurtles *) _breeds[bno-1];
   return ts->size();
+}
+
+int SMicroWorld::maxVarNo(int bno) const
+{
+  return _breeds[bno-1]->maxVarNo();
 }
 
 int SMicroWorld::getAlive(int bno, int tno) const
@@ -1797,11 +1824,16 @@ float SMicroWorld::getFloat(int bno, int vno, int index) const
       return getCols();
     case SObserverVarId::heightVarNo:
       return getRows();
-    case SObserverVarId::turtlesCountVarNo:
-      error("SMicroWorld::getFloat SObserverVarId::turtlesCountVarNo");
-      return 0;
+    case SObserverVarId::maxBreedVarNo:
+      return _breedId.max();
     case SObserverVarId::ticksVarNo:
       return _ticks;
+    case SObserverVarId::countAliveVarNo:
+      return countAlive(index);
+    case SObserverVarId::sizeVarNo:
+      return size(index);
+    case SObserverVarId::maxVarNo:
+      return maxVarNo(index);
     default:
       error("SMicroWorld::getFloat invalid variable");
       break;
@@ -1848,7 +1880,10 @@ void SMicroWorld::setFloat(int bno, int vno, int index, float value)
     switch (vno) {
     case SObserverVarId::widthVarNo:
     case SObserverVarId::heightVarNo:
-    case SObserverVarId::turtlesCountVarNo:
+    case SObserverVarId::maxBreedVarNo:
+    case SObserverVarId::countAliveVarNo:
+    case SObserverVarId::sizeVarNo:
+    case SObserverVarId::maxVarNo:
       break;
     case SObserverVarId::ticksVarNo:
       _ticks = (int) value;
@@ -2018,34 +2053,12 @@ int SMicroWorld::indexAtPoint(float x, float y) const
   return ps->indexAtPoint(x, y);
 }
 
-int SMicroWorld::countAlive(int bno) const
-{
-  int count = 0;
-  if (bno == BreedId::observerBreedNo) {
-    count = 1;
-  } else if (bno == BreedId::patchBreedNo) {
-    SPatches *ps = (SPatches *)_breeds[bno-1];
-    count = ps->countAlive();
-  } else if (bno >= BreedId::turtleBreedNo) {
-    STurtles *ts = (STurtles *)_breeds[bno-1];
-    if (ts != NULL) {
-      count = ts->countAlive();
-    }
-  }
-  return count;
-}
-
 bool SMicroWorld::isActiveBreed(int bno) const
 {
   if (bno == BreedId::observerBreedNo) {
     return true;
   }
   return _breeds[bno-1] != NULL;
-}
-
-int SMicroWorld::maxVarNo(int bno) const
-{
-  return _breeds[bno-1]->maxVarNo();
 }
 
 bool SMicroWorld::addVariable(int bno, const char *str, int vno)

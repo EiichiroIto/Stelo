@@ -685,14 +685,6 @@ void SThread::perform(SteloSymbol s)
     }
     break;
 
-  case SS_turtlesCount:
-    {
-      int bno = (int) popFloat();
-      float ret = (float) _world->countAlive(bno);
-      pushFloat(ret);
-    }
-    break;
-
   case SS_xyOf:
     {
       int pno = (int) popFloat();

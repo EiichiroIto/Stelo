@@ -97,14 +97,17 @@ class VarId : public SteloId {
 
 class SObserverVarId : public VarId {
  private:
-  int defaultCount() const { return turtlesCountVarNo; }
+  int defaultCount() const { return maxVarNo; }
 
  public:
   SObserverVarId();
   const static int widthVarNo = 1;
   const static int heightVarNo = 2;
-  const static int turtlesCountVarNo = 3;
+  const static int maxBreedVarNo = 3;
   const static int ticksVarNo = 4;
+  const static int countAliveVarNo = 5;
+  const static int sizeVarNo = 6;
+  const static int maxVarNo = 7;
 };
 
 class SPatchVarId : public VarId {
@@ -347,6 +350,12 @@ class SMicroWorld {
   const int defaultMaxTurtles = 10000;
   const int defaultMaxPatchOrder = 200;
 
+  int getCols() const;
+  int getRows() const;
+  int countAlive(int bno) const;
+  int maxVarNo(int bno) const;
+  float patchVarHeading(int vno, float x, float y, float heading) const;
+
  public:
   SMicroWorld();
   void reset();
@@ -358,13 +367,10 @@ class SMicroWorld {
   void createTurtles(int bno, int num);
   void forward(int bno, int index, float step);
   const u_int8_t *getScreen();
-  int getCols() const;
-  int getRows() const;
   int size(int bno) const;
   int getAlive(int bno, int index) const;
   void setupBreed(int bno);
   void addEvent(const char *str, int eno);
-  int maxBreedNo() const { return _breedId.max(); }
   void clearPatches();
   void clearTurtles();
   VariableType getType(int bno, int vno) const;
@@ -385,9 +391,7 @@ class SMicroWorld {
   void getDelta(int bno, int index, float *pdx, float *pdy) const;
   void kill(int bno, int index);
   int indexAtPoint(float x, float y) const;
-  int countAlive(int bno) const;
   bool isActiveBreed(int bno) const;
-  int maxVarNo(int bno) const;
   bool addVariable(int bno, const char *str, int vno);
   void clearRaisedEvents();
   void raiseEvent(int eno);
@@ -401,7 +405,6 @@ class SMicroWorld {
   int turtleAt(int bno, int x, int y, int exceptId) const;
   void multiplyBy(int vno, float mul);
   void scaleColor(int vno, int bno, float from, float to, u_int8_t baseColor, int index);
-  float patchVarHeading(int vno, float x, float y, float heading) const;
   float aimHighPatchVar(int vno, float x, float y, float heading) const;
   void setDefaultTurtleXY(int bno, float x, float y);
   void incrementTicks();
