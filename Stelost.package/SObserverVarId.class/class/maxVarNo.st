@@ -1,0 +1,3 @@
+accessing
+maxVarNo
+	^ 7

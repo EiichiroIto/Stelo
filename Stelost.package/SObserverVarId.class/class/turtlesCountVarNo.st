@@ -1,3 +1,0 @@
-accessing
-turtlesCountVarNo
-	^ 3

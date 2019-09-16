@@ -1,7 +1,7 @@
 private
 getWordAll: vno breed: bno
 	| size ptr barr arr i |
-	size := plugin sizeOf: bno.
+	size := self sizeOf: bno.
 	arr := WordArray new: size withAll: 0.
 	ptr := plugin getWordAll: vno breed: bno.
 	ptr isNull

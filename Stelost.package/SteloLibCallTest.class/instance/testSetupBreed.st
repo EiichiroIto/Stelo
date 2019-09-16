@@ -1,3 +1,0 @@
-test
-testSetupBreed
-	self testCountAliveOf.

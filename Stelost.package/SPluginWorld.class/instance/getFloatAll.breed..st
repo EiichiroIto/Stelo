@@ -1,7 +1,7 @@
 private
 getFloatAll: vno breed: bno
 	| size ptr ext arr |
-	size := plugin sizeOf: bno.
+	size := self sizeOf: bno.
 	ptr := plugin getFloatAll: vno breed: bno.
 	ptr isNull
 		ifTrue: [ ^ nil ].

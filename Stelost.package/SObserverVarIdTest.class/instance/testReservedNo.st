@@ -1,3 +1,3 @@
 tests-accessing
 testReservedNo
-	self assert: SObserverVarId reservedNo equals: 4.
+	self assert: SObserverVarId reservedNo equals: 7.

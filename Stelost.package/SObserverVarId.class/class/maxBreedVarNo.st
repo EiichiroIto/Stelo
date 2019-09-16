@@ -1,0 +1,3 @@
+accessing
+maxBreedVarNo
+	^ 3

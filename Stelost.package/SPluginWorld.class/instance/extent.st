@@ -1,3 +1,3 @@
 accessing
 extent
-	^ plugin getRows @ plugin getCols
+	^ self getCols @ self getRows

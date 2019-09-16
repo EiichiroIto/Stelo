@@ -1,3 +1,5 @@
 basic ops
-turtlesCount: bno	
-	^ bcGenerator turtlesCount: (bno argString: parser)
+turtlesCount: bno
+	^ bcGenerator
+		getObserverVar: SObserverVarId countAliveVarNo
+		arg: (bno argString: parser)
